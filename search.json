@@ -284,35 +284,35 @@
     "href": "Templates/P1_template.html#questiontask-1",
     "title": "Client Report - What’s in a Name?",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\nMy name “Aidan” was not used very often before my birth year of 2001, but shot up in popularity in the early 2000s.\n\n\nShow the code\n# Include and execute your code here\n\naidan = df[df['name'] == 'Aidan']\n\nggplot(aidan, aes(x='year', y='Total')) + \\\n    geom_line(color='blue') + \\\n    ggtitle(\"The name 'Aidan' Over Time\") + \\\n    xlab(\"Year\") + ylab(\"Total Names\")"
+    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\nMy name “Aidan” was not used very often before my birth year of 2001, but shot up in popularity in the early 2000s.\n\n\nShow the code\n# Include and execute your code here\n\naidan = df[df['name'] == 'Aidan']\n\nggplot(aidan, aes(x='year', y='Total')) + \\\ngeom_line(color='blue') + \\\ngeom_vline(xintercept=2001, color=\"red\", linetype=\"dashed\") + \\\nscale_x_continuous(format=\"d\") + \\\nggtitle(\"The name 'Aidan' Over Time\")"
   },
   {
     "objectID": "Templates/P1_template.html#questiontask-2",
     "href": "Templates/P1_template.html#questiontask-2",
     "title": "Client Report - What’s in a Name?",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nIf I talked to someone named Brittany on the phone, I would guess she was born in 1990, making her 35 years old. Based on the graph, I would not guess that she is older than 45 or younger than 25.\n\n\nShow the code\n# Include and execute your code here\n\nbrittany = df[df['name'] == 'Brittany']\n\nggplot(brittany, aes(x='year', y='Total')) + \\\n    geom_line(color='blue') + \\\n    ggtitle(\"Name Usage Over Time for 'Brittany'\") + \\\n    xlab(\"Year\") + ylab(\"Total Names\")"
+    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nIf I talked to someone named Brittany on the phone, I would guess she was born in 1990, making her 35 years old. Based on the graph, I would not guess that she is older than 45 or younger than 25.\n\n\nShow the code\n# Include and execute your code here\n\nbrittany = df[df['name'] == 'Brittany']\n\nggplot(brittany, aes(x='year', y='Total')) + \\\ngeom_line(color='blue') + \\\nscale_x_continuous(format=\"d\") + \\\nggtitle(\"Name Usage Over Time for 'Brittany'\") + \\\nxlab(\"Year\") + ylab(\"Total Names\")"
   },
   {
     "objectID": "Templates/P1_template.html#questiontask-3",
     "href": "Templates/P1_template.html#questiontask-3",
     "title": "Client Report - What’s in a Name?",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?\nMary was the most popular of the 4 names. All 4 names dropped in popularity over time, but Mary dropped the most.\n\n\nShow the code\nnames = df[df[\"name\"].isin([\"Mary\", \"Martha\", \"Peter\", \"Paul\"])]\n\nnames = names[(names[\"year\"] &gt;= 1920) & (names[\"year\"] &lt;= 2000)]\n\n(ggplot(names, aes(x=\"year\", y=\"Total\", color=\"name\")) + \\\n geom_line(size=1.2) + \\\n scale_x_continuous(format=\"d\") + \\\n ggtitle(\"Trends of Mary, Martha, Peter, and Pau(1920–2000)\") + \\\n xlab(\"Year\") + ylab(\"Total Names\"))"
   },
   {
     "objectID": "Templates/P1_template.html#questiontask-4",
     "href": "Templates/P1_template.html#questiontask-4",
     "title": "Client Report - What’s in a Name?",
     "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nThis graph shows that the name “Tony” was at its’ most popular around 1960, with a sharp decline afterward. I thought the relase of Iron Man in 2008 would have some effect; however, it seems it changed nothing and the name continued to drop in popularity after the movie.\n\n\nShow the code\ntony = df[df[\"name\"] == \"Tony\"]\n\n(ggplot(tony, aes(x=\"year\", y=\"Total\")) + \\\n geom_line(color=\"red\") + \\\n geom_vline(xintercept=2008, color=\"black\", linetype=\"dashed\") + \\\n scale_x_continuous(format=\"d\") + \\\n ggtitle(\"Did Iron Man Boost the Name 'Tony'?\") + \\\n xlab(\"Year\") + \\\n ylab(\"Total Named Tony\"))"
   },
   {
     "objectID": "Templates/P1_template.html#stretch-questiontask-1",
     "href": "Templates/P1_template.html#stretch-questiontask-1",
     "title": "Client Report - What’s in a Name?",
     "section": "STRETCH QUESTION|TASK 1",
-    "text": "STRETCH QUESTION|TASK 1\nReproduce the chart Elliot using the data from the names_year.csv file.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+    "text": "STRETCH QUESTION|TASK 1\nReproduce the chart Elliot using the data from the names_year.csv file.\nThe name Elliot seemed to lose popularity after the release of the first E.T. It gained popularity after the second release, fell back down, and then really started to rise in 2000 at the third release. It is difficult to deteermine if the movie releases contribute to the name’s popularity because it seems to rise and fall independent of the movie releases.\n\n\nShow the code\nelliot = df[df[\"name\"] == \"Elliot\"].copy()\nelliot[\"label\"] = \"Elliot\" \n\nannotations = pd.DataFrame({\n    \"year\": [1981, 1986, 2003], \n    \"Total\": [1250, 1250, 1250],\n    \"label\": [\"E.T Released\", \"Second\", \"Third\"],\n    \"hjust\": [1, 0, 0]  \n})\n\nplot = (\n    ggplot(elliot, aes(x=\"year\", y=\"Total\", color=\"label\")) +\n    geom_line(size=1.2, alpha=0.7) +\n\n    geom_vline(xintercept=1982, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=1985, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=2002, color=\"red\", linetype=\"dashed\", size=1) +\n\n    geom_text(\n        data=annotations,\n        mapping=aes(x=\"year\", y=\"Total\", label=\"label\", hjust=\"hjust\"),\n        color=\"black\", size=7\n    ) +\n\n    scale_color_manual(values={\"Elliot\": \"blue\"}) +\n    scale_x_continuous(format=\"d\") +\n    ggtitle(\"Elliot... What?\") +\n    xlab(\"year\") + ylab(\"Total\")\n)\n\nplot"
   },
   {
     "objectID": "250_Projects/project3.html",
