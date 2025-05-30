@@ -1,111 +1,5 @@
 [
   {
-    "objectID": "250_Projects/project6.html",
-    "href": "250_Projects/project6.html",
-    "title": "Aidan Pfunder - Data Science Portfolio",
-    "section": "",
-    "text": "Here is a link to my GitHub portfolio: GitHub Portfolio\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "250_Projects/project5.html",
-    "href": "250_Projects/project5.html",
-    "title": "Client Report - The War with Star Wars",
-    "section": "",
-    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nfrom lets_plot import *\n# add the additional libraries you need to import for ML here\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\n\n# import your data here using pandas and the URL",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#elevator-pitch",
-    "href": "250_Projects/project5.html#elevator-pitch",
-    "title": "Client Report - The War with Star Wars",
-    "section": "Elevator pitch",
-    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#questiontask-1",
-    "href": "250_Projects/project5.html#questiontask-1",
-    "title": "Client Report - The War with Star Wars",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nShorten the column names and clean them up for easier use with pandas. Provide a table or list that exemplifies how you fixed the names.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#questiontask-2",
-    "href": "250_Projects/project5.html#questiontask-2",
-    "title": "Client Report - The War with Star Wars",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nClean and format the data so that it can be used in a machine learning model. As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made.\na. Filter the dataset to respondents that have seen at least one film\na. Create a new column that converts the age ranges to a single number. Drop the age range categorical column\na. Create a new column that converts the education groupings to a single number. Drop the school categorical column\na. Create a new column that converts the income ranges to a single number. Drop the income range categorical column\na. Create your target (also known as “y” or “label”) column based on the new income range column\na. One-hot encode all remaining categorical columns\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#questiontask-3",
-    "href": "250_Projects/project5.html#questiontask-3",
-    "title": "Client Report - The War with Star Wars",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nValidate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#questiontask-4",
-    "href": "250_Projects/project5.html#questiontask-4",
-    "title": "Client Report - The War with Star Wars",
-    "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nBuild a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#stretch-questiontask-1",
-    "href": "250_Projects/project5.html#stretch-questiontask-1",
-    "title": "Client Report - The War with Star Wars",
-    "section": "STRETCH QUESTION|TASK 1",
-    "text": "STRETCH QUESTION|TASK 1\nBuild a machine learning model that predicts whether a person makes more than $50k. With accuracy of at least 65%. Describe your model and report the accuracy.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#stretch-questiontask-2",
-    "href": "250_Projects/project5.html#stretch-questiontask-2",
-    "title": "Client Report - The War with Star Wars",
-    "section": "STRETCH QUESTION|TASK 2",
-    "text": "STRETCH QUESTION|TASK 2\nValidate the data provided on GitHub lines up with the article by recreating a 3rd visual from the article.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project5.html#stretch-questiontask-3",
-    "href": "250_Projects/project5.html#stretch-questiontask-3",
-    "title": "Client Report - The War with Star Wars",
-    "section": "STRETCH QUESTION|TASK 3",
-    "text": "STRETCH QUESTION|TASK 3\nCreate a new column that converts the location groupings to a single number. Drop the location categorical column.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
     "objectID": "Templates/DS250_Template.html",
     "href": "Templates/DS250_Template.html",
     "title": "Client Report - [Insert Project Title]",
@@ -146,75 +40,6 @@
     "title": "Client Report - [Insert Project Title]",
     "section": "Question|Task 4",
     "text": "Question|Task 4\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\n\nPROVIDE TABLES THAT HELP ADDRESS THE QUESTIONS AND TASKS (IF APPLICABLE).\n\n\n\ntable example\n# Include and execute your code here\n\n\nNote: Non executing Python Snippets include (3) ``` followed by (3) more ```, each on their own line. These are not single quotes, they are the key left of the number 1 key on the keyboard. The top row can include the language of code that is pasted inbetween the ``` marks.\nNote: These also work in Slack and it is expected they are used for any code shared in that app. No screen shots allowed."
-  },
-  {
-    "objectID": "Templates/ds250_coding_challenge_template.html",
-    "href": "Templates/ds250_coding_challenge_template.html",
-    "title": "Coding Challenge",
-    "section": "",
-    "text": "Show the code\n# Read in libraries\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Read in the names data\nurl = \"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\"\nnames = pd.read_csv(url)"
-  },
-  {
-    "objectID": "Templates/ds250_coding_challenge_template.html#question",
-    "href": "Templates/ds250_coding_challenge_template.html#question",
-    "title": "Coding Challenge",
-    "section": "Question #:",
-    "text": "Question #:\n\n[Replace with the text from question #]\n\n\nShow the code\n# Question # Code\n\n\nWhen done with a question, render it to a .html file and upload it for the question. Either re-downolad this template or file -&gt; save as -&gt; a new file name and then replace the text in the question with the new question text."
-  },
-  {
-    "objectID": "Templates/P0_template.html",
-    "href": "Templates/P0_template.html",
-    "title": "Client Report - Project 0: Introduction",
-    "section": "",
-    "text": "Show the code\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\nfrom palmerpenguins import load_penguins\ndf = load_penguins()"
-  },
-  {
-    "objectID": "Templates/P0_template.html#questiontask-1",
-    "href": "Templates/P0_template.html#questiontask-1",
-    "title": "Client Report - Project 0: Introduction",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nInclude the tables created from PY4DS: CH2 Data Visualization used to create the above chart (Hint: copy the code from 2.2.1. The penguins data frame and paste each in the cells below)\n\n\nShow the code\npenguins = load_penguins()\npenguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n339\nChinstrap\nDream\n55.8\n19.8\n207.0\n4000.0\nmale\n2009\n\n\n340\nChinstrap\nDream\n43.5\n18.1\n202.0\n3400.0\nfemale\n2009\n\n\n341\nChinstrap\nDream\n49.6\n18.2\n193.0\n3775.0\nmale\n2009\n\n\n342\nChinstrap\nDream\n50.8\n19.0\n210.0\n4100.0\nmale\n2009\n\n\n343\nChinstrap\nDream\n50.2\n18.7\n198.0\n3775.0\nfemale\n2009\n\n\n\n\n344 rows × 8 columns\n\n\n\nThe penguins data frame\n\n\nShow the code\npenguins.head()\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
-  },
-  {
-    "objectID": "Templates/P0_template.html#questiontask-2",
-    "href": "Templates/P0_template.html#questiontask-2",
-    "title": "Client Report - Project 0: Introduction",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nRecreate the example charts from PY4DS: CH2 Data Visualization of the textbook. (Hint: copy the chart code from 2.2.3. Creating a Plot, one for each cell below)\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\nScatterplot for penguin data\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\"))\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\", shape=\"species\"))\n    + geom_smooth(method=\"lm\")\n)"
-  },
-  {
-    "objectID": "250_projects.html",
-    "href": "250_projects.html",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "250_projects.html#repo-for-my-projects",
-    "href": "250_projects.html#repo-for-my-projects",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
   },
   {
     "objectID": "Templates/ds250_project_template_clean.html",
@@ -266,53 +91,32 @@
     "text": "QUESTION|TASK 5\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
   },
   {
-    "objectID": "Templates/P1_template.html",
-    "href": "Templates/P1_template.html",
-    "title": "Client Report - What’s in a Name?",
+    "objectID": "Templates/ds250_coding_challenge_template.html",
+    "href": "Templates/ds250_coding_challenge_template.html",
+    "title": "Coding Challenge",
     "section": "",
-    "text": "Show the code\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)"
+    "text": "Show the code\n# Read in libraries\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Read in the names data\nurl = \"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\"\nnames = pd.read_csv(url)"
   },
   {
-    "objectID": "Templates/P1_template.html#project-notes",
-    "href": "Templates/P1_template.html#project-notes",
-    "title": "Client Report - What’s in a Name?",
-    "section": "Project Notes",
-    "text": "Project Notes\nFor Project 1 the answer to each question should include a chart and a written response. The years labels on your charts should not include a comma. At least two of your charts must include reference marks.\n\n\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")"
+    "objectID": "Templates/ds250_coding_challenge_template.html#question",
+    "href": "Templates/ds250_coding_challenge_template.html#question",
+    "title": "Coding Challenge",
+    "section": "Question #:",
+    "text": "Question #:\n\n[Replace with the text from question #]\n\n\nShow the code\n# Question # Code\n\n\nWhen done with a question, render it to a .html file and upload it for the question. Either re-downolad this template or file -&gt; save as -&gt; a new file name and then replace the text in the question with the new question text."
   },
   {
-    "objectID": "Templates/P1_template.html#questiontask-1",
-    "href": "Templates/P1_template.html#questiontask-1",
-    "title": "Client Report - What’s in a Name?",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\nMy name “Aidan” was not used very often before my birth year of 2001, but shot up in popularity in the early 2000s.\n\n\nShow the code\n# Include and execute your code here\n\naidan = df[df['name'] == 'Aidan']\n\nggplot(aidan, aes(x='year', y='Total')) + \\\ngeom_line(color='blue') + \\\ngeom_vline(xintercept=2001, color=\"red\", linetype=\"dashed\") + \\\nscale_x_continuous(format=\"d\") + \\\nggtitle(\"The name 'Aidan' Over Time\")"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
   },
   {
-    "objectID": "Templates/P1_template.html#questiontask-2",
-    "href": "Templates/P1_template.html#questiontask-2",
-    "title": "Client Report - What’s in a Name?",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nIf I talked to someone named Brittany on the phone, I would guess she was born in 1990, making her 35 years old. Based on the graph, I would not guess that she is older than 45 or younger than 25.\n\n\nShow the code\n# Include and execute your code here\n\nbrittany = df[df['name'] == 'Brittany']\n\nggplot(brittany, aes(x='year', y='Total')) + \\\ngeom_line(color='blue') + \\\nscale_x_continuous(format=\"d\") + \\\nggtitle(\"Name Usage Over Time for 'Brittany'\") + \\\nxlab(\"Year\") + ylab(\"Total Names\")"
-  },
-  {
-    "objectID": "Templates/P1_template.html#questiontask-3",
-    "href": "Templates/P1_template.html#questiontask-3",
-    "title": "Client Report - What’s in a Name?",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?\nMary was the most popular of the 4 names. All 4 names dropped in popularity over time, but Mary dropped the most.\n\n\nShow the code\nnames = df[df[\"name\"].isin([\"Mary\", \"Martha\", \"Peter\", \"Paul\"])]\n\nnames = names[(names[\"year\"] &gt;= 1920) & (names[\"year\"] &lt;= 2000)]\n\n(ggplot(names, aes(x=\"year\", y=\"Total\", color=\"name\")) + \\\n geom_line(size=1.2) + \\\n scale_x_continuous(format=\"d\") + \\\n ggtitle(\"Trends of Mary, Martha, Peter, and Pau(1920–2000)\") + \\\n xlab(\"Year\") + ylab(\"Total Names\"))"
-  },
-  {
-    "objectID": "Templates/P1_template.html#questiontask-4",
-    "href": "Templates/P1_template.html#questiontask-4",
-    "title": "Client Report - What’s in a Name?",
-    "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nThis graph shows that the name “Tony” was at its’ most popular around 1960, with a sharp decline afterward. I thought the relase of Iron Man in 2008 would have some effect; however, it seems it changed nothing and the name continued to drop in popularity after the movie.\n\n\nShow the code\ntony = df[df[\"name\"] == \"Tony\"]\n\n(ggplot(tony, aes(x=\"year\", y=\"Total\")) + \\\n geom_line(color=\"red\") + \\\n geom_vline(xintercept=2008, color=\"black\", linetype=\"dashed\") + \\\n scale_x_continuous(format=\"d\") + \\\n ggtitle(\"Did Iron Man Boost the Name 'Tony'?\") + \\\n xlab(\"Year\") + \\\n ylab(\"Total Named Tony\"))"
-  },
-  {
-    "objectID": "Templates/P1_template.html#stretch-questiontask-1",
-    "href": "Templates/P1_template.html#stretch-questiontask-1",
-    "title": "Client Report - What’s in a Name?",
-    "section": "STRETCH QUESTION|TASK 1",
-    "text": "STRETCH QUESTION|TASK 1\nReproduce the chart Elliot using the data from the names_year.csv file.\nThe name Elliot seemed to lose popularity after the release of the first E.T. It gained popularity after the second release, fell back down, and then really started to rise in 2000 at the third release. It is difficult to deteermine if the movie releases contribute to the name’s popularity because it seems to rise and fall independent of the movie releases.\n\n\nShow the code\nelliot = df[df[\"name\"] == \"Elliot\"].copy()\nelliot[\"label\"] = \"Elliot\" \n\nannotations = pd.DataFrame({\n    \"year\": [1981, 1986, 2003], \n    \"Total\": [1250, 1250, 1250],\n    \"label\": [\"E.T Released\", \"Second\", \"Third\"],\n    \"hjust\": [1, 0, 0]  \n})\n\nplot = (\n    ggplot(elliot, aes(x=\"year\", y=\"Total\", color=\"label\")) +\n    geom_line(size=1.2, alpha=0.7) +\n\n    geom_vline(xintercept=1982, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=1985, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=2002, color=\"red\", linetype=\"dashed\", size=1) +\n\n    geom_text(\n        data=annotations,\n        mapping=aes(x=\"year\", y=\"Total\", label=\"label\", hjust=\"hjust\"),\n        color=\"black\", size=7\n    ) +\n\n    scale_color_manual(values={\"Elliot\": \"blue\"}) +\n    scale_x_continuous(format=\"d\") +\n    ggtitle(\"Elliot... What?\") +\n    xlab(\"year\") + ylab(\"Total\")\n)\n\nplot"
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
   },
   {
     "objectID": "250_Projects/project3.html",
@@ -489,5 +293,243 @@
       "DS250 Projects",
       "Project 4"
     ]
+  },
+  {
+    "objectID": "250_projects.html",
+    "href": "250_projects.html",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "250_projects.html#repo-for-my-projects",
+    "href": "250_projects.html#repo-for-my-projects",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html",
+    "href": "250_Projects/project5.html",
+    "title": "Client Report - The War with Star Wars",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nfrom lets_plot import *\n# add the additional libraries you need to import for ML here\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\n\n# import your data here using pandas and the URL",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#elevator-pitch",
+    "href": "250_Projects/project5.html#elevator-pitch",
+    "title": "Client Report - The War with Star Wars",
+    "section": "Elevator pitch",
+    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#questiontask-1",
+    "href": "250_Projects/project5.html#questiontask-1",
+    "title": "Client Report - The War with Star Wars",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nShorten the column names and clean them up for easier use with pandas. Provide a table or list that exemplifies how you fixed the names.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#questiontask-2",
+    "href": "250_Projects/project5.html#questiontask-2",
+    "title": "Client Report - The War with Star Wars",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nClean and format the data so that it can be used in a machine learning model. As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made.\na. Filter the dataset to respondents that have seen at least one film\na. Create a new column that converts the age ranges to a single number. Drop the age range categorical column\na. Create a new column that converts the education groupings to a single number. Drop the school categorical column\na. Create a new column that converts the income ranges to a single number. Drop the income range categorical column\na. Create your target (also known as “y” or “label”) column based on the new income range column\na. One-hot encode all remaining categorical columns\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#questiontask-3",
+    "href": "250_Projects/project5.html#questiontask-3",
+    "title": "Client Report - The War with Star Wars",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nValidate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#questiontask-4",
+    "href": "250_Projects/project5.html#questiontask-4",
+    "title": "Client Report - The War with Star Wars",
+    "section": "QUESTION|TASK 4",
+    "text": "QUESTION|TASK 4\nBuild a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#stretch-questiontask-1",
+    "href": "250_Projects/project5.html#stretch-questiontask-1",
+    "title": "Client Report - The War with Star Wars",
+    "section": "STRETCH QUESTION|TASK 1",
+    "text": "STRETCH QUESTION|TASK 1\nBuild a machine learning model that predicts whether a person makes more than $50k. With accuracy of at least 65%. Describe your model and report the accuracy.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#stretch-questiontask-2",
+    "href": "250_Projects/project5.html#stretch-questiontask-2",
+    "title": "Client Report - The War with Star Wars",
+    "section": "STRETCH QUESTION|TASK 2",
+    "text": "STRETCH QUESTION|TASK 2\nValidate the data provided on GitHub lines up with the article by recreating a 3rd visual from the article.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project5.html#stretch-questiontask-3",
+    "href": "250_Projects/project5.html#stretch-questiontask-3",
+    "title": "Client Report - The War with Star Wars",
+    "section": "STRETCH QUESTION|TASK 3",
+    "text": "STRETCH QUESTION|TASK 3\nCreate a new column that converts the location groupings to a single number. Drop the location categorical column.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project6.html",
+    "href": "250_Projects/project6.html",
+    "title": "Aidan Pfunder - Data Science Portfolio",
+    "section": "",
+    "text": "Here is a link to my GitHub portfolio: GitHub Portfolio\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Templates/P0_template.html",
+    "href": "Templates/P0_template.html",
+    "title": "Client Report - Project 0: Introduction",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\nfrom palmerpenguins import load_penguins\ndf = load_penguins()"
+  },
+  {
+    "objectID": "Templates/P0_template.html#questiontask-1",
+    "href": "Templates/P0_template.html#questiontask-1",
+    "title": "Client Report - Project 0: Introduction",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nInclude the tables created from PY4DS: CH2 Data Visualization used to create the above chart (Hint: copy the code from 2.2.1. The penguins data frame and paste each in the cells below)\n\n\nShow the code\npenguins = load_penguins()\npenguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n339\nChinstrap\nDream\n55.8\n19.8\n207.0\n4000.0\nmale\n2009\n\n\n340\nChinstrap\nDream\n43.5\n18.1\n202.0\n3400.0\nfemale\n2009\n\n\n341\nChinstrap\nDream\n49.6\n18.2\n193.0\n3775.0\nmale\n2009\n\n\n342\nChinstrap\nDream\n50.8\n19.0\n210.0\n4100.0\nmale\n2009\n\n\n343\nChinstrap\nDream\n50.2\n18.7\n198.0\n3775.0\nfemale\n2009\n\n\n\n\n344 rows × 8 columns\n\n\n\nThe penguins data frame\n\n\nShow the code\npenguins.head()\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+  },
+  {
+    "objectID": "Templates/P0_template.html#questiontask-2",
+    "href": "Templates/P0_template.html#questiontask-2",
+    "title": "Client Report - Project 0: Introduction",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nRecreate the example charts from PY4DS: CH2 Data Visualization of the textbook. (Hint: copy the chart code from 2.2.3. Creating a Plot, one for each cell below)\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\nScatterplot for penguin data\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\"))\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\", shape=\"species\"))\n    + geom_smooth(method=\"lm\")\n)"
+  },
+  {
+    "objectID": "Templates/P2_template.html",
+    "href": "Templates/P2_template.html",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\nsqlite_file = 'lahmansbaseballdb.sqlite'\n# this file must be in the same location as your .qmd or .py file\ncon = sqlite3.connect(sqlite_file)"
+  },
+  {
+    "objectID": "Templates/P2_template.html#questiontask-1",
+    "href": "Templates/P2_template.html#questiontask-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\ntype your results and analysis here\n\n\nShow the code\nquery_byu_idaho_salaries = \"\"\"\nSELECT\n  collegeplaying.playerID,\n  collegeplaying.schoolID,\n  salaries.salary,\n  salaries.yearID,\n  salaries.teamID\nFROM collegeplaying\nJOIN salaries\n  ON collegeplaying.playerID = salaries.playerID\nWHERE collegeplaying.schoolID = 'idbyuid'\nORDER BY salaries.salary DESC;\n\"\"\"\ndf_byu_idaho_salaries = pd.read_sql_query(query_byu_idaho_salaries, con)\nprint(df_byu_idaho_salaries)\n\n\n     playerID schoolID     salary  yearID teamID\n0   lindsma01  idbyuid  4000000.0    2014    CHA\n1   lindsma01  idbyuid  4000000.0    2014    CHA\n2   lindsma01  idbyuid  3600000.0    2012    BAL\n3   lindsma01  idbyuid  3600000.0    2012    BAL\n4   lindsma01  idbyuid  2800000.0    2011    COL\n5   lindsma01  idbyuid  2800000.0    2011    COL\n6   lindsma01  idbyuid  2300000.0    2013    CHA\n7   lindsma01  idbyuid  2300000.0    2013    CHA\n8   lindsma01  idbyuid  1625000.0    2010    HOU\n9   lindsma01  idbyuid  1625000.0    2010    HOU\n10  stephga01  idbyuid  1025000.0    2001    SLN\n11  stephga01  idbyuid  1025000.0    2001    SLN\n12  stephga01  idbyuid   900000.0    2002    SLN\n13  stephga01  idbyuid   900000.0    2002    SLN\n14  stephga01  idbyuid   800000.0    2003    SLN\n15  stephga01  idbyuid   800000.0    2003    SLN\n16  stephga01  idbyuid   550000.0    2000    SLN\n17  stephga01  idbyuid   550000.0    2000    SLN\n18  lindsma01  idbyuid   410000.0    2009    FLO\n19  lindsma01  idbyuid   410000.0    2009    FLO\n20  lindsma01  idbyuid   395000.0    2008    FLO\n21  lindsma01  idbyuid   395000.0    2008    FLO\n22  lindsma01  idbyuid   380000.0    2007    FLO\n23  lindsma01  idbyuid   380000.0    2007    FLO\n24  stephga01  idbyuid   215000.0    1999    SLN\n25  stephga01  idbyuid   215000.0    1999    SLN\n26  stephga01  idbyuid   185000.0    1998    PHI\n27  stephga01  idbyuid   185000.0    1998    PHI\n28  stephga01  idbyuid   150000.0    1997    PHI\n29  stephga01  idbyuid   150000.0    1997    PHI"
+  },
+  {
+    "objectID": "Templates/P2_template.html#questiontask-2",
+    "href": "Templates/P2_template.html#questiontask-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\na. Write an SQL query that provides playerID, yearID, and batting average for players with at least 1 at bat that year. Sort the table from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.\na. Use the same query as above, but only include players with at least 10 at bats that year. Print the top 5 results.\na. Now calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats, and print the top 5 results.\ntype your results and analysis here\n\n\nShow the code\nquery_season_batting_ab1 = \"\"\"\nSELECT\n  playerID,\n  yearID,\n  CAST(H AS FLOAT) / AB AS batting_avg\nFROM batting\nWHERE AB &gt;= 1\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n\"\"\"\ndf_season_batting_ab1 = pd.read_sql_query(query_season_batting_ab1, con)\nprint(df_season_batting_ab1)\n\n\n    playerID  yearID  batting_avg\n0   aberal01    1957          1.0\n1  abernte02    1960          1.0\n2  abramge01    1923          1.0\n3  acklefr01    1964          1.0\n4  alanirj01    2019          1.0\n\n\n\n\nShow the code\nquery_season_batting_ab10 = \"\"\"\nSELECT\n  playerID,\n  yearID,\n  CAST(H AS FLOAT) / AB AS batting_avg\nFROM batting\nWHERE AB &gt;= 10\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n\"\"\"\ndf_season_batting_ab10 = pd.read_sql_query(query_season_batting_ab10, con)\nprint(df_season_batting_ab10)\n\n\n    playerID  yearID  batting_avg\n0  nymanny01    1974     0.642857\n1  carsoma01    2013     0.636364\n2  altizda01    1910     0.600000\n3  johnsde01    1975     0.600000\n4  silvech01    1948     0.571429\n\n\n\n\nShow the code\nquery_career_batting_avg = \"\"\"\nSELECT\n  playerID,\n  SUM(H)   AS total_hits,\n  SUM(AB)  AS total_at_bats,\n  SUM(H)*1.0/SUM(AB) AS batting_avg\nFROM batting\nGROUP BY playerID\nHAVING SUM(AB) &gt;= 100\nORDER BY batting_avg DESC\nLIMIT 5\n\"\"\"\ndf_career_batting_avg = pd.read_sql_query(query_career_batting_avg, con)\nprint(df_career_batting_avg)\n\n\n    playerID  total_hits  total_at_bats  batting_avg\n0   cobbty01        4189          11436     0.366299\n1  barnero01         860           2391     0.359682\n2  hornsro01        2930           8173     0.358497\n3  jacksjo01        1772           4981     0.355752\n4  meyerle01         513           1443     0.355509"
+  },
+  {
+    "objectID": "Templates/P2_template.html#questiontask-3",
+    "href": "Templates/P2_template.html#questiontask-3",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+  },
+  {
+    "objectID": "Templates/P2_template.html#stretch-questiontask-1",
+    "href": "Templates/P2_template.html#stretch-questiontask-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION|TASK 1",
+    "text": "STRETCH QUESTION|TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n* Write an SQL query that provides a summary table showing the average salary for each position (e.g., pitcher, catcher, outfielder). Position information can be found in the fielding table in the POS column. \n\n    Include the following columns:\n\n    * position\n    * average_salary\n    * total_players\n    * highest_salary  \n\n* The highest_salary column should display the highest salary ever earned by a player in that position. \n\n* Additionally, create a new column called salary_category using a case statement:  \n\n    * If the average salary is above $3 million, categorize it as “High Salary.”\n    * If the average salary is between $2 million and $3 million, categorize it as “Medium Salary.”\n    * Otherwise, categorize it as “Low Salary.”  \n\n* Order the table by average salary in descending order.\n\n**Hint:** Beware, it is common for a player to play multiple positions in a single year. For this analysis, each player’s salary should only be counted toward one position in a given year: the position at which they played the most games that year. This will likely require a (sub-query)[https://docs.data.world/documentation/sql/concepts/advanced/WITH.html].\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+  },
+  {
+    "objectID": "Templates/P2_template.html#stretch-questiontask-2",
+    "href": "Templates/P2_template.html#stretch-questiontask-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION|TASK 2",
+    "text": "STRETCH QUESTION|TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n* Calculate the average career length (in years) for players who have played at least **10 games**. Then, identify the top 10 players with the longest careers (based on the number of years they played). Include their: \n\n    * playerID\n    * first_name\n    * last_name\n    * career_length\n\n* The career_length should be calculated as the difference between the maximum and minimum yearID for each player.  \ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+  },
+  {
+    "objectID": "Templates/P1_template.html",
+    "href": "Templates/P1_template.html",
+    "title": "Client Report - What’s in a Name?",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)"
+  },
+  {
+    "objectID": "Templates/P1_template.html#project-notes",
+    "href": "Templates/P1_template.html#project-notes",
+    "title": "Client Report - What’s in a Name?",
+    "section": "Project Notes",
+    "text": "Project Notes\nFor Project 1 the answer to each question should include a chart and a written response. The years labels on your charts should not include a comma. At least two of your charts must include reference marks.\n\n\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")"
+  },
+  {
+    "objectID": "Templates/P1_template.html#questiontask-1",
+    "href": "Templates/P1_template.html#questiontask-1",
+    "title": "Client Report - What’s in a Name?",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\nMy name “Aidan” was not used very often before my birth year of 2001, but shot up in popularity in the early 2000s.\n\n\nShow the code\n# Include and execute your code here\n\naidan = df[df['name'] == 'Aidan']\n\nggplot(aidan, aes(x='year', y='Total')) + \\\ngeom_line(color='blue') + \\\ngeom_vline(xintercept=2001, color=\"red\", linetype=\"dashed\") + \\\nscale_x_continuous(format=\"d\") + \\\nggtitle(\"The name 'Aidan' Over Time\")"
+  },
+  {
+    "objectID": "Templates/P1_template.html#questiontask-2",
+    "href": "Templates/P1_template.html#questiontask-2",
+    "title": "Client Report - What’s in a Name?",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nIf I talked to someone named Brittany on the phone, I would guess she was born in 1990, making her 35 years old. Based on the graph, I would not guess that she is older than 45 or younger than 25.\n\n\nShow the code\n# Include and execute your code here\n\nbrittany = df[df['name'] == 'Brittany']\n\nggplot(brittany, aes(x='year', y='Total')) + \\\ngeom_line(color='blue') + \\\nscale_x_continuous(format=\"d\") + \\\nggtitle(\"Name Usage Over Time for 'Brittany'\") + \\\nxlab(\"Year\") + ylab(\"Total Names\")"
+  },
+  {
+    "objectID": "Templates/P1_template.html#questiontask-3",
+    "href": "Templates/P1_template.html#questiontask-3",
+    "title": "Client Report - What’s in a Name?",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?\nMary was the most popular of the 4 names. All 4 names dropped in popularity over time, but Mary dropped the most.\n\n\nShow the code\nnames = df[df[\"name\"].isin([\"Mary\", \"Martha\", \"Peter\", \"Paul\"])]\n\nnames = names[(names[\"year\"] &gt;= 1920) & (names[\"year\"] &lt;= 2000)]\n\n(ggplot(names, aes(x=\"year\", y=\"Total\", color=\"name\")) + \\\n geom_line(size=1.2) + \\\n scale_x_continuous(format=\"d\") + \\\n ggtitle(\"Trends of Mary, Martha, Peter, and Pau(1920–2000)\") + \\\n xlab(\"Year\") + ylab(\"Total Names\"))"
+  },
+  {
+    "objectID": "Templates/P1_template.html#questiontask-4",
+    "href": "Templates/P1_template.html#questiontask-4",
+    "title": "Client Report - What’s in a Name?",
+    "section": "QUESTION|TASK 4",
+    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nThis graph shows that the name “Tony” was at its’ most popular around 1960, with a sharp decline afterward. I thought the relase of Iron Man in 2008 would have some effect; however, it seems it changed nothing and the name continued to drop in popularity after the movie.\n\n\nShow the code\ntony = df[df[\"name\"] == \"Tony\"]\n\n(ggplot(tony, aes(x=\"year\", y=\"Total\")) + \\\n geom_line(color=\"red\") + \\\n geom_vline(xintercept=2008, color=\"black\", linetype=\"dashed\") + \\\n scale_x_continuous(format=\"d\") + \\\n ggtitle(\"Did Iron Man Boost the Name 'Tony'?\") + \\\n xlab(\"Year\") + \\\n ylab(\"Total Named Tony\"))"
+  },
+  {
+    "objectID": "Templates/P1_template.html#stretch-questiontask-1",
+    "href": "Templates/P1_template.html#stretch-questiontask-1",
+    "title": "Client Report - What’s in a Name?",
+    "section": "STRETCH QUESTION|TASK 1",
+    "text": "STRETCH QUESTION|TASK 1\nReproduce the chart Elliot using the data from the names_year.csv file.\nThe name Elliot seemed to lose popularity after the release of the first E.T. It gained popularity after the second release, fell back down, and then really started to rise in 2000 at the third release. It is difficult to deteermine if the movie releases contribute to the name’s popularity because it seems to rise and fall independent of the movie releases.\n\n\nShow the code\nelliot = df[df[\"name\"] == \"Elliot\"].copy()\nelliot[\"label\"] = \"Elliot\" \n\nannotations = pd.DataFrame({\n    \"year\": [1981, 1986, 2003], \n    \"Total\": [1250, 1250, 1250],\n    \"label\": [\"E.T Released\", \"Second\", \"Third\"],\n    \"hjust\": [1, 0, 0]  \n})\n\nplot = (\n    ggplot(elliot, aes(x=\"year\", y=\"Total\", color=\"label\")) +\n    geom_line(size=1.2, alpha=0.7) +\n\n    geom_vline(xintercept=1982, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=1985, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=2002, color=\"red\", linetype=\"dashed\", size=1) +\n\n    geom_text(\n        data=annotations,\n        mapping=aes(x=\"year\", y=\"Total\", label=\"label\", hjust=\"hjust\"),\n        color=\"black\", size=7\n    ) +\n\n    scale_color_manual(values={\"Elliot\": \"blue\"}) +\n    scale_x_continuous(format=\"d\") +\n    ggtitle(\"Elliot... What?\") +\n    xlab(\"year\") + ylab(\"Total\")\n)\n\nplot"
   }
 ]
