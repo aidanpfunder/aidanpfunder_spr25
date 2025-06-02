@@ -24,6 +24,7 @@ execute:
   warning: false
     
 ---
+Have you ever wondered what secrets lie hidden in the data behind baseball? I've written custom SQL queries in Python to show the standout players from BYU-Idaho, calculate batting averages, and compare average salaries between top teams like the Yankees and Red Sox. 
 
 ```{python}
 import pandas as pd 
@@ -138,10 +139,35 @@ print(df_career_batting_avg)
 
 __Pick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?__
 
-_type your results and analysis here_
+I compared the average salaries between the Boston Red Sox and the New York Yankees. I learned that the New York Yankees have started paying their players significantly mkore on average since 2002. Both teams have increased their average salaries over time. 
 
 ```{python}
-# Include and execute your code here
+from lets_plot import *
+LetsPlot.setup_html(isolated_frame=True)
+
+query_team_salary = """
+SELECT
+  yearID,
+  teamID,
+  AVG(salary) AS avg_salary
+FROM salaries
+WHERE teamID IN ('NYA', 'BOS')
+GROUP BY yearID, teamID
+ORDER BY yearID, teamID;
+"""
+df_team_salary = pd.read_sql_query(query_team_salary, con)
+print(df_team_salary)
+
+plot_salary_compare = (
+    ggplot(df_team_salary, aes(x='yearID', y='avg_salary', fill='teamID')) +
+    geom_bar(stat='identity', position='dodge') +
+    labs(
+      x = "Season Year",
+      y = "Average Salary",
+      title = "Average Player Salary: Yankees vs Red Sox"
+    )
+)
+plot_salary_compare.show()
 
 ```
 
@@ -174,10 +200,57 @@ __Advanced Salary Distribution by Position (with Case Statement):__
 
     
 
-_type your results and analysis here_
+This shows that first base players have the highest average salary for baseball players. It is interested that although the highest paid player is a pitcher, pitchers rank 4th according to average salaries. This may be because pitcher has the highest number of players, meaning that they cannot all be top earners. 
 
 ```{python}
-# Include and execute your code here
+
+query_salary_by_position_named = """
+WITH primary_pos AS (
+  SELECT
+    playerID,
+    yearID,
+    POS       AS pos,
+    SUM(G)    AS games_played,
+    ROW_NUMBER() OVER (
+      PARTITION BY playerID, yearID
+      ORDER BY SUM(G) DESC
+    ) AS rn
+  FROM fielding
+  GROUP BY playerID, yearID, POS
+)
+SELECT
+  CASE primary_pos.pos
+    WHEN 'P'  THEN 'Pitcher'
+    WHEN 'C'  THEN 'Catcher'
+    WHEN '1B' THEN 'First Base'
+    WHEN '2B' THEN 'Second Base'
+    WHEN 'SS' THEN 'Shortstop'
+    WHEN '3B' THEN 'Third Base'
+    WHEN 'LF' THEN 'Left Field'
+    WHEN 'CF' THEN 'Center Field'
+    WHEN 'RF' THEN 'Right Field'
+    WHEN 'DH' THEN 'Designated Hitter'
+    ELSE primary_pos.pos
+  END AS position,
+  AVG(salaries.salary)               AS average_salary,
+  COUNT(DISTINCT salaries.playerID)  AS total_players,
+  MAX(salaries.salary)               AS highest_salary,
+  CASE
+    WHEN AVG(salaries.salary) > 3000000 THEN 'High Salary'
+    WHEN AVG(salaries.salary) >= 2000000 THEN 'Medium Salary'
+    ELSE 'Low Salary'
+  END AS salary_category
+FROM salaries
+JOIN primary_pos
+  ON salaries.playerID = primary_pos.playerID
+ AND salaries.yearID   = primary_pos.yearID
+WHERE primary_pos.rn = 1
+GROUP BY position
+ORDER BY average_salary DESC;
+"""
+
+df_salary_by_position_named = pd.read_sql_query(query_salary_by_position_named, con)
+print(df_salary_by_position_named)
 
 
 ```
@@ -196,10 +269,38 @@ __Advanced Career Longevity and Performance (with Subqueries):__
 
     * The career_length should be calculated as the difference between the maximum and minimum yearID for each player.  
 
-_type your results and analysis here_
+The top ten longest carreers for baseball players is dominated by older players. Of the ten, six of them began their careers in the 1800s with two more beginning before 1904. The player with the logest career is Jim O'Rourke with 32 years, who began his career in 1872. This could be a sign that modern players do not last as long in their career due to more intense play or stricter work out regiments. 
 
 ```{python}
-# Include and execute your code here
+
+query_career_longevity_with_start = """
+WITH career_stats AS (
+  SELECT
+    playerID,
+    MIN(yearID)               AS first_year,
+    MAX(yearID)               AS last_year,
+    (MAX(yearID) - MIN(yearID)) AS career_length,
+    SUM(G)                    AS total_games
+  FROM fielding
+  GROUP BY playerID
+  HAVING SUM(G) >= 10
+)
+SELECT
+  cs.playerID,
+  p.nameFirst     AS first_name,
+  p.nameLast      AS last_name,
+  cs.first_year   AS start_year,
+  cs.career_length
+FROM career_stats AS cs
+JOIN people AS p
+  ON cs.playerID = p.playerID
+ORDER BY cs.career_length DESC
+LIMIT 10;
+"""
+
+df_career_longevity_with_start = pd.read_sql_query(query_career_longevity_with_start, con)
+print(df_career_longevity_with_start)
+
 
 
 ```
