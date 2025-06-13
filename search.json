@@ -1,201 +1,5 @@
 [
   {
-    "objectID": "Templates/DS250_Template.html",
-    "href": "Templates/DS250_Template.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "THIS .qmd IS INSTRUCTIONAL AND SHOULD NOT BE USED TO WRITE YOUR REPORTS (EXCEPTION - PROJECT 0). THERE IS ANOTHER TEMPLATE FILE FOR THAT. YOU WILL NEED TO PREVIEW THE REPORT TO PRODUCE A .html FILE. YOU WILL SUBMIT THE .html FILE ON CANVAS."
-  },
-  {
-    "objectID": "Templates/DS250_Template.html#elevator-pitch",
-    "href": "Templates/DS250_Template.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "Elevator pitch",
-    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\n# Note: using the URL is the easiest way for the data to still work in GitHub\n# You may download the file and reference it by name but only if you save it in the same folder as your .qmd file\nurl = 'https://raw.githubusercontent.com/byuidatascience/data4python4ds/master/data-raw/mpg/mpg.csv'\ndf = pd.read_csv(url)\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Templates/DS250_Template.html#questiontask-1",
-    "href": "Templates/DS250_Template.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "Question|Task 1",
-    "text": "Question|Task 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\nAdd details here to answer the question but NOT like an assignment Q&A. You need to write your answers as a consulting solution report. A Client needs to understand the answer, but also needs to understand the decisions that went into the answer (when applicable).\ninclude figures in chunks and discuss your findings in the figure.\n\nYOU SHOULD HAVE QUALITY WRITING THAT DESCRIBES YOUR CHARTS AND TABLES.\nWE HIGHLY RECOMMEND GRAMMARLY TO FIX YOUR SPELLING AND GRAMMAR. WRITING TAKES TIME TO BE CLEAR. SPEND THE TIME TO PRACITCE.\nYOU SHOULD HAVE QUALITY COMMENTS THAT DESCRIBES YOUR CODES. OFTEN CODEERS WORK IN TEAMS AND YOU NEED TO HAVE QUALTIY COMMENTS FOR YOUR TEAM AND YOURSELF. YOU MAY NEED TO REVISIT CODE YOU WROTE OVER A YEAR AGO, AND IF YOU DONT COMMENT IT NOW YOU WONT REMEMBER WHY YOU DID WHAT YOU DID.\n\n\n\nRead and format data\n# Include and execute your code here"
-  },
-  {
-    "objectID": "Templates/DS250_Template.html#questiontask-2",
-    "href": "Templates/DS250_Template.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "Question|Task 2",
-    "text": "Question|Task 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\n\nplot example\n# Include and execute your code here\n\n(\n  ggplot(df.head(500), aes(x='displ', y='hwy')) + geom_point()\n)\n\n\n\n  \n  \n    \n    \n    \n      \n        \n          \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n          \n        \n        \n          \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n          \n        \n      \n      \n        \n          \n            \n              \n                \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                \n              \n            \n          \n        \n        \n          \n            \n            \n          \n        \n      \n      \n        \n          \n            \n            \n            \n              \n                2\n              \n            \n          \n          \n            \n            \n            \n              \n                3\n              \n            \n          \n          \n            \n            \n            \n              \n                4\n              \n            \n          \n          \n            \n            \n            \n              \n                5\n              \n            \n          \n          \n            \n            \n            \n              \n                6\n              \n            \n          \n          \n            \n            \n            \n              \n                7\n              \n            \n          \n          \n          \n        \n        \n          \n            \n              \n                15\n              \n            \n          \n          \n            \n              \n                20\n              \n            \n          \n          \n            \n              \n                25\n              \n            \n          \n          \n            \n              \n                30\n              \n            \n          \n          \n            \n              \n                35\n              \n            \n          \n          \n            \n              \n                40\n              \n            \n          \n          \n            \n              \n                45\n              \n            \n          \n        \n      \n    \n    \n      \n        hwy\n      \n    \n    \n      \n        displ\n      \n    \n    \n    \n  \n  \n  \n\nMy useless chart"
-  },
-  {
-    "objectID": "Templates/DS250_Template.html#questiontask-3",
-    "href": "Templates/DS250_Template.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "Question|Task 3",
-    "text": "Question|Task 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\n\nPROVIDE TABLES THAT HELP ADDRESS THE QUESTIONS AND TASKS (IF APPLICABLE).\n\n\n\ntable example\n# Include and execute your code here\nmydat = (df.head(1000)\n    .groupby('manufacturer')\n    .sum()\n    .reset_index()\n    .tail(10)\n    .filter([\"manufacturer\",\"displ\",\"cty\", \"hwy\"])\n)\n\ndisplay(mydat)\n\n\n\n\n\n\ntable example\n\n\n\nmanufacturer\ndispl\ncty\nhwy\n\n\n\n\n5\nhyundai\n34.0\n261\n376\n\n\n6\njeep\n36.6\n108\n141\n\n\n7\nland rover\n17.2\n46\n66\n\n\n8\nlincoln\n16.2\n34\n51\n\n\n9\nmercury\n17.6\n53\n72\n\n\n10\nnissan\n42.5\n235\n320\n\n\n11\npontiac\n19.8\n85\n132\n\n\n12\nsubaru\n34.4\n270\n358\n\n\n13\ntoyota\n100.4\n630\n847\n\n\n14\nvolkswagen\n60.9\n565\n789"
-  },
-  {
-    "objectID": "Templates/DS250_Template.html#questiontask-4",
-    "href": "Templates/DS250_Template.html#questiontask-4",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "Question|Task 4",
-    "text": "Question|Task 4\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\n\nPROVIDE TABLES THAT HELP ADDRESS THE QUESTIONS AND TASKS (IF APPLICABLE).\n\n\n\ntable example\n# Include and execute your code here\n\n\nNote: Non executing Python Snippets include (3) ``` followed by (3) more ```, each on their own line. These are not single quotes, they are the key left of the number 1 key on the keyboard. The top row can include the language of code that is pasted inbetween the ``` marks.\nNote: These also work in Slack and it is expected they are used for any code shared in that app. No screen shots allowed."
-  },
-  {
-    "objectID": "Templates/ds250_project_template_clean.html",
-    "href": "Templates/ds250_project_template_clean.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Templates/ds250_project_template_clean.html#elevator-pitch",
-    "href": "Templates/ds250_project_template_clean.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Templates/ds250_project_template_clean.html#questiontask-1",
-    "href": "Templates/ds250_project_template_clean.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n(\n  ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = (df.head(1000)\n    .groupby('year')\n    .sum()\n    .reset_index()\n    .tail(10)\n    .filter([\"year\", \"AK\",\"AR\"])\n)\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Templates/ds250_project_template_clean.html#questiontask-2",
-    "href": "Templates/ds250_project_template_clean.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
-  },
-  {
-    "objectID": "Templates/ds250_project_template_clean.html#questiontask-3",
-    "href": "Templates/ds250_project_template_clean.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
-  },
-  {
-    "objectID": "Templates/ds250_project_template_clean.html#questiontask-4",
-    "href": "Templates/ds250_project_template_clean.html#questiontask-4",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
-  },
-  {
-    "objectID": "Templates/ds250_project_template_clean.html#questiontask-5",
-    "href": "Templates/ds250_project_template_clean.html#questiontask-5",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 5",
-    "text": "QUESTION|TASK 5\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
-  },
-  {
-    "objectID": "Templates/ds250_coding_challenge_template.html",
-    "href": "Templates/ds250_coding_challenge_template.html",
-    "title": "Coding Challenge",
-    "section": "",
-    "text": "Show the code\n# Read in libraries\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Read in the names data\nurl = \"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\"\nnames = pd.read_csv(url)"
-  },
-  {
-    "objectID": "Templates/ds250_coding_challenge_template.html#question",
-    "href": "Templates/ds250_coding_challenge_template.html#question",
-    "title": "Coding Challenge",
-    "section": "Question #:",
-    "text": "Question #:\n\n[Replace with the text from question #]\n\n\nShow the code\n# Question # Code\n\n\nWhen done with a question, render it to a .html file and upload it for the question. Either re-downolad this template or file -&gt; save as -&gt; a new file name and then replace the text in the question with the new question text."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "250_Projects/project3.html",
-    "href": "250_Projects/project3.html",
-    "title": "Client Report - Late Flights & Missing Data (JSON)",
-    "section": "",
-    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\nsqlite_file = 'lahmansbaseballdb.sqlite'\n# this file must be in the same location as your .qmd or .py file\ncon = sqlite3.connect(sqlite_file)",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project3.html#elevator-pitch",
-    "href": "250_Projects/project3.html#elevator-pitch",
-    "title": "Client Report - Late Flights & Missing Data (JSON)",
-    "section": "Elevator pitch",
-    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project3.html#questiontask-1",
-    "href": "250_Projects/project3.html#questiontask-1",
-    "title": "Client Report - Late Flights & Missing Data (JSON)",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project3.html#questiontask-2",
-    "href": "250_Projects/project3.html#questiontask-2",
-    "title": "Client Report - Late Flights & Missing Data (JSON)",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\na. Write an SQL query that provides playerID, yearID, and batting average for players with at least 1 at bat that year. Sort the table from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.\na. Use the same query as above, but only include players with at least 10 at bats that year. Print the top 5 results.\na. Now calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats, and print the top 5 results.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project3.html#questiontask-3",
-    "href": "250_Projects/project3.html#questiontask-3",
-    "title": "Client Report - Late Flights & Missing Data (JSON)",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project3.html#stretch-questiontask-1",
-    "href": "250_Projects/project3.html#stretch-questiontask-1",
-    "title": "Client Report - Late Flights & Missing Data (JSON)",
-    "section": "STRETCH QUESTION|TASK 1",
-    "text": "STRETCH QUESTION|TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n* Write an SQL query that provides a summary table showing the average salary for players in each position (e.g., pitcher, catcher, outfielder) across all years. Include the following columns:\n\n    * position\n    * average_salary\n    * total_players\n    * highest_salary  \n\n* The highest_salary column should display the highest salary ever earned by a player in that position. If no player in that position has a recorded salary, display “N/A” for the highest salary.  \n\n* Additionally, create a new column called salary_category using a case statement:  \n\n    * If the average salary is above $1 million, categorize it as “High Salary.”  \n    * If the average salary is between $500,000 and $1 million, categorize it as “Medium Salary.”  \n    * Otherwise, categorize it as “Low Salary.”  \n\n* Order the table by average salary in descending order.\n* Print the top 10 rows of this summary table.  \ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project3.html#stretch-questiontask-2",
-    "href": "250_Projects/project3.html#stretch-questiontask-2",
-    "title": "Client Report - Late Flights & Missing Data (JSON)",
-    "section": "STRETCH QUESTION|TASK 2",
-    "text": "STRETCH QUESTION|TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n* Calculate the average career length (in years) for players who have played at least one game. Then, identify the top 10 players with the longest careers (based on the number of years they played). Include their:  \n\n    * playerID\n    * first_name\n    * last_name\n    * career_length\n\n* The career_length should be calculated as the difference between the maximum and minimum yearID for each player. \ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
     "objectID": "250_Projects/project4.html",
     "href": "250_Projects/project4.html",
     "title": "Client Report - Can You Predict That?",
@@ -292,26 +96,6 @@
     "crumbs": [
       "DS250 Projects",
       "Project 4"
-    ]
-  },
-  {
-    "objectID": "250_projects.html",
-    "href": "250_projects.html",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "250_projects.html#repo-for-my-projects",
-    "href": "250_projects.html#repo-for-my-projects",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
-    "crumbs": [
-      "DS250 Projects"
     ]
   },
   {
@@ -414,34 +198,6 @@
     ]
   },
   {
-    "objectID": "250_Projects/project6.html",
-    "href": "250_Projects/project6.html",
-    "title": "Aidan Pfunder - Data Science Portfolio",
-    "section": "",
-    "text": "Here is a link to my GitHub portfolio: GitHub Portfolio\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Templates/P0_template.html",
-    "href": "Templates/P0_template.html",
-    "title": "Client Report - Project 0: Introduction",
-    "section": "",
-    "text": "Show the code\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\nfrom palmerpenguins import load_penguins\ndf = load_penguins()"
-  },
-  {
-    "objectID": "Templates/P0_template.html#questiontask-1",
-    "href": "Templates/P0_template.html#questiontask-1",
-    "title": "Client Report - Project 0: Introduction",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nInclude the tables created from PY4DS: CH2 Data Visualization used to create the above chart (Hint: copy the code from 2.2.1. The penguins data frame and paste each in the cells below)\n\n\nShow the code\npenguins = load_penguins()\npenguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n339\nChinstrap\nDream\n55.8\n19.8\n207.0\n4000.0\nmale\n2009\n\n\n340\nChinstrap\nDream\n43.5\n18.1\n202.0\n3400.0\nfemale\n2009\n\n\n341\nChinstrap\nDream\n49.6\n18.2\n193.0\n3775.0\nmale\n2009\n\n\n342\nChinstrap\nDream\n50.8\n19.0\n210.0\n4100.0\nmale\n2009\n\n\n343\nChinstrap\nDream\n50.2\n18.7\n198.0\n3775.0\nfemale\n2009\n\n\n\n\n344 rows × 8 columns\n\n\n\nThe penguins data frame\n\n\nShow the code\npenguins.head()\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
-  },
-  {
-    "objectID": "Templates/P0_template.html#questiontask-2",
-    "href": "Templates/P0_template.html#questiontask-2",
-    "title": "Client Report - Project 0: Introduction",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nRecreate the example charts from PY4DS: CH2 Data Visualization of the textbook. (Hint: copy the chart code from 2.2.3. Creating a Plot, one for each cell below)\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\nScatterplot for penguin data\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\"))\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\", shape=\"species\"))\n    + geom_smooth(method=\"lm\")\n)"
-  },
-  {
     "objectID": "Templates/P2_Baseball.html",
     "href": "Templates/P2_Baseball.html",
     "title": "Client Report - Finding Relationships in Baseball",
@@ -482,6 +238,180 @@
     "title": "Client Report - Finding Relationships in Baseball",
     "section": "STRETCH QUESTION|TASK 2",
     "text": "STRETCH QUESTION|TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n* Calculate the average career length (in years) for players who have played at least **10 games**. Then, identify the top 10 players with the longest careers (based on the number of years they played). Include their: \n\n    * playerID\n    * first_name\n    * last_name\n    * career_length\n\n* The career_length should be calculated as the difference between the maximum and minimum yearID for each player.  \nThe top ten longest carreers for baseball players is dominated by older players. Of the ten, six of them began their careers in the 1800s with two more beginning before 1904. The player with the logest career is Jim O’Rourke with 32 years, who began his career in 1872. This could be a sign that modern players do not last as long in their career due to more intense play or stricter work out regiments.\n\n\nShow the code\nquery_career_longevity_with_start = \"\"\"\nWITH career_stats AS (\n  SELECT\n    playerID,\n    MIN(yearID)               AS first_year,\n    MAX(yearID)               AS last_year,\n    (MAX(yearID) - MIN(yearID)) AS career_length,\n    SUM(G)                    AS total_games\n  FROM fielding\n  GROUP BY playerID\n  HAVING SUM(G) &gt;= 10\n)\nSELECT\n  cs.playerID,\n  p.nameFirst     AS first_name,\n  p.nameLast      AS last_name,\n  cs.first_year   AS start_year,\n  cs.career_length\nFROM career_stats AS cs\nJOIN people AS p\n  ON cs.playerID = p.playerID\nORDER BY cs.career_length DESC\nLIMIT 10;\n\"\"\"\n\ndf_career_longevity_with_start = pd.read_sql_query(query_career_longevity_with_start, con)\nprint(df_career_longevity_with_start)\n\n\n    playerID first_name last_name  start_year  career_length\n0  orourji01        Jim  O'Rourke        1872             32\n1  altroni01       Nick   Altrock        1898             31\n2  lathaar01      Arlie    Latham        1880             29\n3  mcguide01     Deacon   McGuire        1884             28\n4  eversjo01     Johnny     Evers        1902             27\n5  jennihu01     Hughie  Jennings        1891             27\n6   ryanno01      Nolan      Ryan        1966             27\n7  streega01      Gabby    Street        1904             27\n8  ansonca01        Cap     Anson        1871             26\n9   johnto01      Tommy      John        1963             26"
+  },
+  {
+    "objectID": "Templates/ds250_coding_challenge_template.html",
+    "href": "Templates/ds250_coding_challenge_template.html",
+    "title": "Coding Challenge",
+    "section": "",
+    "text": "Show the code\n# Read in libraries\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Read in the names data\nurl = \"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\"\nnames = pd.read_csv(url)"
+  },
+  {
+    "objectID": "Templates/ds250_coding_challenge_template.html#question",
+    "href": "Templates/ds250_coding_challenge_template.html#question",
+    "title": "Coding Challenge",
+    "section": "Question #:",
+    "text": "Question #:\n\n[Replace with the text from question #]\n\n\nShow the code\n# Question # Code\n\n\nWhen done with a question, render it to a .html file and upload it for the question. Either re-downolad this template or file -&gt; save as -&gt; a new file name and then replace the text in the question with the new question text."
+  },
+  {
+    "objectID": "Templates/ds250_project_template_clean.html",
+    "href": "Templates/ds250_project_template_clean.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
+  },
+  {
+    "objectID": "Templates/ds250_project_template_clean.html#elevator-pitch",
+    "href": "Templates/ds250_project_template_clean.html#elevator-pitch",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
+  },
+  {
+    "objectID": "Templates/ds250_project_template_clean.html#questiontask-1",
+    "href": "Templates/ds250_project_template_clean.html#questiontask-1",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n(\n  ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = (df.head(1000)\n    .groupby('year')\n    .sum()\n    .reset_index()\n    .tail(10)\n    .filter([\"year\", \"AK\",\"AR\"])\n)\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
+  },
+  {
+    "objectID": "Templates/ds250_project_template_clean.html#questiontask-2",
+    "href": "Templates/ds250_project_template_clean.html#questiontask-2",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+  },
+  {
+    "objectID": "Templates/ds250_project_template_clean.html#questiontask-3",
+    "href": "Templates/ds250_project_template_clean.html#questiontask-3",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+  },
+  {
+    "objectID": "Templates/ds250_project_template_clean.html#questiontask-4",
+    "href": "Templates/ds250_project_template_clean.html#questiontask-4",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 4",
+    "text": "QUESTION|TASK 4\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+  },
+  {
+    "objectID": "Templates/ds250_project_template_clean.html#questiontask-5",
+    "href": "Templates/ds250_project_template_clean.html#questiontask-5",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 5",
+    "text": "QUESTION|TASK 5\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+  },
+  {
+    "objectID": "Templates/P0_template.html",
+    "href": "Templates/P0_template.html",
+    "title": "Client Report - Project 0: Introduction",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\nfrom palmerpenguins import load_penguins\ndf = load_penguins()"
+  },
+  {
+    "objectID": "Templates/P0_template.html#questiontask-1",
+    "href": "Templates/P0_template.html#questiontask-1",
+    "title": "Client Report - Project 0: Introduction",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nInclude the tables created from PY4DS: CH2 Data Visualization used to create the above chart (Hint: copy the code from 2.2.1. The penguins data frame and paste each in the cells below)\n\n\nShow the code\npenguins = load_penguins()\npenguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n339\nChinstrap\nDream\n55.8\n19.8\n207.0\n4000.0\nmale\n2009\n\n\n340\nChinstrap\nDream\n43.5\n18.1\n202.0\n3400.0\nfemale\n2009\n\n\n341\nChinstrap\nDream\n49.6\n18.2\n193.0\n3775.0\nmale\n2009\n\n\n342\nChinstrap\nDream\n50.8\n19.0\n210.0\n4100.0\nmale\n2009\n\n\n343\nChinstrap\nDream\n50.2\n18.7\n198.0\n3775.0\nfemale\n2009\n\n\n\n\n344 rows × 8 columns\n\n\n\nThe penguins data frame\n\n\nShow the code\npenguins.head()\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+  },
+  {
+    "objectID": "Templates/P0_template.html#questiontask-2",
+    "href": "Templates/P0_template.html#questiontask-2",
+    "title": "Client Report - Project 0: Introduction",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nRecreate the example charts from PY4DS: CH2 Data Visualization of the textbook. (Hint: copy the chart code from 2.2.3. Creating a Plot, one for each cell below)\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\nScatterplot for penguin data\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(\n        data=penguins,\n        mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\"),\n    )\n    + geom_point()\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\"))\n    + geom_smooth(method=\"lm\")\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nShow the code\n(\n    ggplot(data=penguins, mapping=aes(x=\"flipper_length_mm\", y=\"body_mass_g\"))\n    + geom_point(mapping=aes(color=\"species\", shape=\"species\"))\n    + geom_smooth(method=\"lm\")\n)"
+  },
+  {
+    "objectID": "250_projects.html",
+    "href": "250_projects.html",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "250_projects.html#repo-for-my-projects",
+    "href": "250_projects.html#repo-for-my-projects",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 3 - Late Flights and Missing Data (JSON)\nProject 4 - Can you Predict That?\nProject 5 - The War with StarWars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Templates/P3_template.html",
+    "href": "Templates/P3_template.html",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd\nimport numpy as np\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_json(\"https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json\")"
+  },
+  {
+    "objectID": "Templates/P3_template.html#elevator-pitch",
+    "href": "Templates/P3_template.html#elevator-pitch",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "Elevator pitch",
+    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client."
+  },
+  {
+    "objectID": "Templates/P3_template.html#questiontask-1",
+    "href": "Templates/P3_template.html#questiontask-1",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nFix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”). In your report include one record example (one row) from your new data, in the raw JSON format. Your example should display the “NaN” for at least one missing value.__\ntype your results and analysis here\n\n\nShow the code\ndf_clean = df.replace([\"\", \"NA\", \"NaN\", None], np.nan)\n\nexample_record = df_clean.iloc[[0]].to_json(orient=\"records\")\nprint(example_record)\n\n\n[{\"airport_code\":\"ATL\",\"airport_name\":\"Atlanta, GA: Hartsfield-Jackson Atlanta International\",\"month\":\"January\",\"year\":2005.0,\"num_of_flights_total\":35048,\"num_of_delays_carrier\":\"1500+\",\"num_of_delays_late_aircraft\":-999,\"num_of_delays_nas\":4598,\"num_of_delays_security\":10,\"num_of_delays_weather\":448,\"num_of_delays_total\":8355,\"minutes_delayed_carrier\":116423.0,\"minutes_delayed_late_aircraft\":104415,\"minutes_delayed_nas\":207467.0,\"minutes_delayed_security\":297,\"minutes_delayed_weather\":36931,\"minutes_delayed_total\":465533}]"
+  },
+  {
+    "objectID": "Templates/P3_template.html#questiontask-2",
+    "href": "Templates/P3_template.html#questiontask-2",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nWhich airport has the worst delays? Describe the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours.\ntype your results and analysis here\n\n\nShow the code\n# Task 2: worst airport by proportion & average delay\ndf2 = df_clean.copy()\n\n# compute total minutes delayed across all categories\ndelay_min_cols = [\n    \"minutes_delayed_carrier\", \"minutes_delayed_late_aircraft\",\n    \"minutes_delayed_nas\",     \"minutes_delayed_security\",\n    \"minutes_delayed_weather\"\n]\ndf2[\"total_delay_mins\"] = df2[delay_min_cols].sum(axis=1)\n\nsummary = (\n    df2\n      .groupby(\"airport_code\")\n      .agg(\n         total_flights    = (\"num_of_flights_total\", \"sum\"),\n         delayed_flights  = (\"num_of_delays_total\",   \"sum\"),\n         total_delay_mins = (\"total_delay_mins\",      \"sum\"),\n      )\n      .assign(\n         prop_delayed    = lambda d: d[\"delayed_flights\"] / d[\"total_flights\"],\n         avg_delay_hours = lambda d: (d[\"total_delay_mins\"] / d[\"delayed_flights\"]) / 60\n      )\n      .reset_index()\n)\n\nprint(summary.sort_values(\"prop_delayed\", ascending=False))\n\n\n  airport_code  total_flights  delayed_flights  total_delay_mins  \\\n5          SFO        1630945           425604        25853438.0   \n3          ORD        3597588           830825        54598084.0   \n0          ATL        4430047           902443        52769237.0   \n2          IAD         851571           168467         9862739.0   \n4          SAN         917862           175132         8043504.0   \n1          DEN        2513974           468519        24562692.0   \n6          SLC        1403384           205160         9822243.0   \n\n   prop_delayed  avg_delay_hours  \n5      0.260955         1.012421  \n3      0.230939         1.095258  \n0      0.203710         0.974563  \n2      0.197831         0.975734  \n4      0.190804         0.765471  \n1      0.186366         0.873771  \n6      0.146189         0.797934"
+  },
+  {
+    "objectID": "Templates/P3_template.html#questiontask-3",
+    "href": "Templates/P3_template.html#questiontask-3",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nWhat is the best month to fly if you want to avoid delays of any length? Describe the metric you chose and why you chose it to calculate your answer. Include one chart to help support your answer, with the x-axis ordered by month. (To answer this question, you will need to remove any rows that are missing the Month variable.)\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+  },
+  {
+    "objectID": "Templates/P3_template.html#questiontask-4",
+    "href": "Templates/P3_template.html#questiontask-4",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 4",
+    "text": "QUESTION|TASK 4\nAccording to the BTS website, the “Weather” category only accounts for severe weather delays. Mild weather delays are not counted in the “Weather” category, but are actually included in both the “NAS” and “Late-Arriving Aircraft” categories. Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild). You will need to replace all the missing values in the Late Aircraft variable with the mean. Show your work by printing the first 5 rows of data in a table. Use these three rules for your calculations:\na. 100% of delayed flights in the Weather category are due to weather  \na. 30% of all delayed flights in the Late-Arriving category are due to weather  \na. From April to August, 40% of delayed flights in the NAS category are due to weather. The rest of the months, the proportion rises to 65%    \ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here"
+  },
+  {
+    "objectID": "Templates/P3_template.html#questiontask-5",
+    "href": "Templates/P3_template.html#questiontask-5",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 5",
+    "text": "QUESTION|TASK 5\nUsing the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport. Describe what you learn from this graph.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
+  },
+  {
+    "objectID": "Templates/P3_template.html#stretch-questiontask-1",
+    "href": "Templates/P3_template.html#stretch-questiontask-1",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "STRETCH QUESTION|TASK 1",
+    "text": "STRETCH QUESTION|TASK 1\nWhich delay is the worst delay? Create a similar analysis as above for Weahter Delay with: Carrier Delay and Security Delay. Compare the proportion of delay for each of the three categories in a Chart and a Table. Describe your results.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here"
   },
   {
     "objectID": "Templates/P1_template.html",
@@ -531,5 +461,131 @@
     "title": "Client Report - What’s in a Name?",
     "section": "STRETCH QUESTION|TASK 1",
     "text": "STRETCH QUESTION|TASK 1\nReproduce the chart Elliot using the data from the names_year.csv file.\nThe name Elliot seemed to lose popularity after the release of the first E.T. It gained popularity after the second release, fell back down, and then really started to rise in 2000 at the third release. It is difficult to deteermine if the movie releases contribute to the name’s popularity because it seems to rise and fall independent of the movie releases.\n\n\nShow the code\nelliot = df[df[\"name\"] == \"Elliot\"].copy()\nelliot[\"label\"] = \"Elliot\" \n\nannotations = pd.DataFrame({\n    \"year\": [1981, 1986, 2003], \n    \"Total\": [1250, 1250, 1250],\n    \"label\": [\"E.T Released\", \"Second\", \"Third\"],\n    \"hjust\": [1, 0, 0]  \n})\n\nplot = (\n    ggplot(elliot, aes(x=\"year\", y=\"Total\", color=\"label\")) +\n    geom_line(size=1.2, alpha=0.7) +\n\n    geom_vline(xintercept=1982, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=1985, color=\"red\", linetype=\"dashed\", size=1) +\n    geom_vline(xintercept=2002, color=\"red\", linetype=\"dashed\", size=1) +\n\n    geom_text(\n        data=annotations,\n        mapping=aes(x=\"year\", y=\"Total\", label=\"label\", hjust=\"hjust\"),\n        color=\"black\", size=7\n    ) +\n\n    scale_color_manual(values={\"Elliot\": \"blue\"}) +\n    scale_x_continuous(format=\"d\") +\n    ggtitle(\"Elliot... What?\") +\n    xlab(\"year\") + ylab(\"Total\")\n)\n\nplot"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html",
+    "href": "Templates/DS250_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "THIS .qmd IS INSTRUCTIONAL AND SHOULD NOT BE USED TO WRITE YOUR REPORTS (EXCEPTION - PROJECT 0). THERE IS ANOTHER TEMPLATE FILE FOR THAT. YOU WILL NEED TO PREVIEW THE REPORT TO PRODUCE A .html FILE. YOU WILL SUBMIT THE .html FILE ON CANVAS."
+  },
+  {
+    "objectID": "Templates/DS250_Template.html#elevator-pitch",
+    "href": "Templates/DS250_Template.html#elevator-pitch",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "Elevator pitch",
+    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\n# Note: using the URL is the easiest way for the data to still work in GitHub\n# You may download the file and reference it by name but only if you save it in the same folder as your .qmd file\nurl = 'https://raw.githubusercontent.com/byuidatascience/data4python4ds/master/data-raw/mpg/mpg.csv'\ndf = pd.read_csv(url)\n\n\nHighlight the Questions and Tasks"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html#questiontask-1",
+    "href": "Templates/DS250_Template.html#questiontask-1",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "Question|Task 1",
+    "text": "Question|Task 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\nAdd details here to answer the question but NOT like an assignment Q&A. You need to write your answers as a consulting solution report. A Client needs to understand the answer, but also needs to understand the decisions that went into the answer (when applicable).\ninclude figures in chunks and discuss your findings in the figure.\n\nYOU SHOULD HAVE QUALITY WRITING THAT DESCRIBES YOUR CHARTS AND TABLES.\nWE HIGHLY RECOMMEND GRAMMARLY TO FIX YOUR SPELLING AND GRAMMAR. WRITING TAKES TIME TO BE CLEAR. SPEND THE TIME TO PRACITCE.\nYOU SHOULD HAVE QUALITY COMMENTS THAT DESCRIBES YOUR CODES. OFTEN CODEERS WORK IN TEAMS AND YOU NEED TO HAVE QUALTIY COMMENTS FOR YOUR TEAM AND YOURSELF. YOU MAY NEED TO REVISIT CODE YOU WROTE OVER A YEAR AGO, AND IF YOU DONT COMMENT IT NOW YOU WONT REMEMBER WHY YOU DID WHAT YOU DID.\n\n\n\nRead and format data\n# Include and execute your code here"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html#questiontask-2",
+    "href": "Templates/DS250_Template.html#questiontask-2",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "Question|Task 2",
+    "text": "Question|Task 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\n\nplot example\n# Include and execute your code here\n\n(\n  ggplot(df.head(500), aes(x='displ', y='hwy')) + geom_point()\n)\n\n\n\n  \n  \n    \n    \n    \n      \n        \n          \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n          \n        \n        \n          \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n            \n          \n        \n      \n      \n        \n          \n            \n              \n                \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                \n              \n            \n          \n        \n        \n          \n            \n            \n          \n        \n      \n      \n        \n          \n            \n            \n            \n              \n                2\n              \n            \n          \n          \n            \n            \n            \n              \n                3\n              \n            \n          \n          \n            \n            \n            \n              \n                4\n              \n            \n          \n          \n            \n            \n            \n              \n                5\n              \n            \n          \n          \n            \n            \n            \n              \n                6\n              \n            \n          \n          \n            \n            \n            \n              \n                7\n              \n            \n          \n          \n          \n        \n        \n          \n            \n              \n                15\n              \n            \n          \n          \n            \n              \n                20\n              \n            \n          \n          \n            \n              \n                25\n              \n            \n          \n          \n            \n              \n                30\n              \n            \n          \n          \n            \n              \n                35\n              \n            \n          \n          \n            \n              \n                40\n              \n            \n          \n          \n            \n              \n                45\n              \n            \n          \n        \n      \n    \n    \n      \n        hwy\n      \n    \n    \n      \n        displ\n      \n    \n    \n    \n  \n  \n  \n\nMy useless chart"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html#questiontask-3",
+    "href": "Templates/DS250_Template.html#questiontask-3",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "Question|Task 3",
+    "text": "Question|Task 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\n\nPROVIDE TABLES THAT HELP ADDRESS THE QUESTIONS AND TASKS (IF APPLICABLE).\n\n\n\ntable example\n# Include and execute your code here\nmydat = (df.head(1000)\n    .groupby('manufacturer')\n    .sum()\n    .reset_index()\n    .tail(10)\n    .filter([\"manufacturer\",\"displ\",\"cty\", \"hwy\"])\n)\n\ndisplay(mydat)\n\n\n\n\n\n\ntable example\n\n\n\nmanufacturer\ndispl\ncty\nhwy\n\n\n\n\n5\nhyundai\n34.0\n261\n376\n\n\n6\njeep\n36.6\n108\n141\n\n\n7\nland rover\n17.2\n46\n66\n\n\n8\nlincoln\n16.2\n34\n51\n\n\n9\nmercury\n17.6\n53\n72\n\n\n10\nnissan\n42.5\n235\n320\n\n\n11\npontiac\n19.8\n85\n132\n\n\n12\nsubaru\n34.4\n270\n358\n\n\n13\ntoyota\n100.4\n630\n847\n\n\n14\nvolkswagen\n60.9\n565\n789"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html#questiontask-4",
+    "href": "Templates/DS250_Template.html#questiontask-4",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "Question|Task 4",
+    "text": "Question|Task 4\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\n\nPROVIDE TABLES THAT HELP ADDRESS THE QUESTIONS AND TASKS (IF APPLICABLE).\n\n\n\ntable example\n# Include and execute your code here\n\n\nNote: Non executing Python Snippets include (3) ``` followed by (3) more ```, each on their own line. These are not single quotes, they are the key left of the number 1 key on the keyboard. The top row can include the language of code that is pasted inbetween the ``` marks.\nNote: These also work in Slack and it is expected they are used for any code shared in that app. No screen shots allowed."
+  },
+  {
+    "objectID": "250_Projects/project3.html",
+    "href": "250_Projects/project3.html",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\nsqlite_file = 'lahmansbaseballdb.sqlite'\n# this file must be in the same location as your .qmd or .py file\ncon = sqlite3.connect(sqlite_file)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project3.html#elevator-pitch",
+    "href": "250_Projects/project3.html#elevator-pitch",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "Elevator pitch",
+    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project3.html#questiontask-1",
+    "href": "250_Projects/project3.html#questiontask-1",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project3.html#questiontask-2",
+    "href": "250_Projects/project3.html#questiontask-2",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\na. Write an SQL query that provides playerID, yearID, and batting average for players with at least 1 at bat that year. Sort the table from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.\na. Use the same query as above, but only include players with at least 10 at bats that year. Print the top 5 results.\na. Now calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats, and print the top 5 results.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here\n\n\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project3.html#questiontask-3",
+    "href": "250_Projects/project3.html#questiontask-3",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project3.html#stretch-questiontask-1",
+    "href": "250_Projects/project3.html#stretch-questiontask-1",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "STRETCH QUESTION|TASK 1",
+    "text": "STRETCH QUESTION|TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n* Write an SQL query that provides a summary table showing the average salary for players in each position (e.g., pitcher, catcher, outfielder) across all years. Include the following columns:\n\n    * position\n    * average_salary\n    * total_players\n    * highest_salary  \n\n* The highest_salary column should display the highest salary ever earned by a player in that position. If no player in that position has a recorded salary, display “N/A” for the highest salary.  \n\n* Additionally, create a new column called salary_category using a case statement:  \n\n    * If the average salary is above $1 million, categorize it as “High Salary.”  \n    * If the average salary is between $500,000 and $1 million, categorize it as “Medium Salary.”  \n    * Otherwise, categorize it as “Low Salary.”  \n\n* Order the table by average salary in descending order.\n* Print the top 10 rows of this summary table.  \ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project3.html#stretch-questiontask-2",
+    "href": "250_Projects/project3.html#stretch-questiontask-2",
+    "title": "Client Report - Late Flights & Missing Data (JSON)",
+    "section": "STRETCH QUESTION|TASK 2",
+    "text": "STRETCH QUESTION|TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n* Calculate the average career length (in years) for players who have played at least one game. Then, identify the top 10 players with the longest careers (based on the number of years they played). Include their:  \n\n    * playerID\n    * first_name\n    * last_name\n    * career_length\n\n* The career_length should be calculated as the difference between the maximum and minimum yearID for each player. \ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project6.html",
+    "href": "250_Projects/project6.html",
+    "title": "Aidan Pfunder - Data Science Portfolio",
+    "section": "",
+    "text": "Here is a link to my GitHub portfolio: GitHub Portfolio\n\n\n\n\n Back to top"
   }
 ]
