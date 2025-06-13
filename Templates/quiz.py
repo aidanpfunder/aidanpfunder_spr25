@@ -1,11 +1,24 @@
+
+# Read in libraries
 import pandas as pd
+import numpy as np
+from lets_plot import *
+LetsPlot.setup_html(isolated_frame=True)
+df = pd.read_json("https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json")
 
-# Load the dataset
-url = 'https://raw.githubusercontent.com/byuidatascience/data4names/master/data-raw/names_year/names_year.csv'
-df = pd.read_csv(url)
+# If your missing months are true NaNs:
+num_missing = df['month'].isna().sum()
 
-# Filter for babies named 'Oliver' and sum the births for all years
-oliver_babies = df[df['name'] == 'Oliver']
-total_oliver_babies = oliver_babies['births'].sum()
+# If some entries literally contain the string "n/a" (any case):
+num_na_strings = df['month'].astype(str).str.lower().eq('n/a').sum()
 
-print(f"Total number of babies named Oliver: {total_oliver_babies}")
+# Combine both checks:
+mask = df['month'].isna() | df['month'].astype(str).str.lower().eq('n/a')
+total_na = mask.sum()
+
+print(f"Missing (NaN) months: {num_missing}")
+print(f"Literal 'n/a' months:    {num_na_strings}")
+print(f"Total n/a or missing:    {total_na}")
+
+na_counts = df.isna().sum()
+print(na_counts[na_counts == 23])
