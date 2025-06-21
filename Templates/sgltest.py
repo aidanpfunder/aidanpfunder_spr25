@@ -11,3 +11,4 @@ q = 'SELECT * FROM allstarfull LIMIT 5'
 results = pd.read_sql_query(q,con)
 
 results
+# %%

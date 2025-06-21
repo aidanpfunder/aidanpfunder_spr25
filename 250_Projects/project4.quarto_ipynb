@@ -1,0 +1,284 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Client Report - Can You Predict That?\"\n",
+        "subtitle: \"Course DS 250\"\n",
+        "author: \"Aidan Pfunder\"\n",
+        "format:\n",
+        "  html:\n",
+        "    self-contained: true\n",
+        "    page-layout: full\n",
+        "    title-block-banner: true\n",
+        "    toc: true\n",
+        "    toc-depth: 3\n",
+        "    toc-location: body\n",
+        "    number-sections: false\n",
+        "    html-math-method: katex\n",
+        "    code-fold: true\n",
+        "    code-summary: \"Show the code\"\n",
+        "    code-overflow: wrap\n",
+        "    code-copy: hover\n",
+        "    code-tools:\n",
+        "        source: false\n",
+        "        toggle: true\n",
+        "        caption: See code\n",
+        "execute: \n",
+        "  warning: false\n",
+        "    \n",
+        "---"
+      ],
+      "id": "d5e63fe0"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd \n",
+        "import numpy as np\n",
+        "from lets_plot import *\n",
+        "\n",
+        "# Setup LetsPlot for HTML output\n",
+        "LetsPlot.setup_html(isolated_frame=True)\n",
+        "\n",
+        "url = \"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\"\n",
+        "df = pd.read_csv(url)"
+      ],
+      "id": "0a2cd87b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n",
+        "\n",
+        "# Include and execute your code here\n",
+        "\n",
+        "# import your data here using pandas and the URL\n"
+      ],
+      "id": "7f969798",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Elevator pitch\n",
+        "_A SHORT (2-3 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._ (Note: this is not a summary of the project, but a summary of the results.)\n",
+        "\n",
+        "_A Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client._\n",
+        "\n",
+        "## QUESTION|TASK 1\n",
+        "\n",
+        "__Create 2-3 charts that evaluate potential relationships between the home variables and `before1980`.__ Explain what you learn from the charts that could help a machine learning algorithm. \n",
+        "\n",
+        "_type your results and analysis here_"
+      ],
+      "id": "4fc604b8"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "from lets_plot.mapping import as_discrete\n",
+        "\n",
+        "plot1 = ggplot(df, aes(x='sqr_ft', fill=as_discrete('before1980'))) + \\\n",
+        "    geom_density(alpha=0.6) + ggtitle(\"Square Footage by Year Built\")\n",
+        "\n",
+        "plot2 = ggplot(df, aes(x='total_area', fill=as_discrete('before1980'))) + \\\n",
+        "    geom_density(alpha=0.6) + ggtitle(\"Total Area by Year Built\")\n",
+        "\n",
+        "plot3 = ggplot(df, aes(x='num_baths', fill=as_discrete('before1980'))) + \\\n",
+        "    geom_bar(stat='count', position='dodge') + ggtitle(\"Number of Baths by Year Built\")\n",
+        "\n",
+        "plot1 + plot2 + plot3\n"
+      ],
+      "id": "012af286",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## QUESTION|TASK 2\n",
+        "\n",
+        "__Build a classification model labeling houses as being built “before 1980” or “during or after 1980”.__ Your goal is to reach or exceed 90% accuracy. Explain your final model choice (algorithm, tuning parameters, etc) and describe what other models you tried.  \n",
+        "\n",
+        "_type your results and analysis here_"
+      ],
+      "id": "705ee79f"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Prepare data\n",
+        "X = df.drop(columns=['before1980']).select_dtypes(include=np.number).copy()\n",
+        "y = df['before1980']\n",
+        "\n",
+        "X = X.dropna()\n",
+        "y = y.loc[X.index]\n",
+        "\n",
+        "# Train-test split\n",
+        "from sklearn.model_selection import train_test_split\n",
+        "from sklearn.preprocessing import StandardScaler\n",
+        "\n",
+        "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n",
+        "\n",
+        "# Feature scaling\n",
+        "scaler = StandardScaler()\n",
+        "X_train_scaled = scaler.fit_transform(X_train)\n",
+        "X_test_scaled = scaler.transform(X_test)\n",
+        "\n",
+        "# Train classifier\n",
+        "clf = RandomForestClassifier(n_estimators=100, random_state=42)\n",
+        "clf.fit(X_train_scaled, y_train)\n",
+        "y_pred = clf.predict(X_test_scaled)\n",
+        "\n",
+        "# Evaluate\n",
+        "accuracy = accuracy_score(y_test, y_pred)\n",
+        "print(f\"Accuracy: {accuracy:.2%}\")"
+      ],
+      "id": "0753d777",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## QUESTION|TASK 3\n",
+        "\n",
+        "__Justify your classification model by discussing the most important features selected by your model.__ This discussion should include a feature importance chart and a description of the features. \n",
+        "\n",
+        "_type your results and analysis here_"
+      ],
+      "id": "2715b655"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Include and execute your code here"
+      ],
+      "id": "60e96af7",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## QUESTION|TASK 4\n",
+        "\n",
+        "__Describe the quality of your classification model using 2-3 different evaluation metrics.__ You also need to explain how to interpret each of the evaluation metrics you use.  \n",
+        "\n",
+        "_type your results and analysis here_"
+      ],
+      "id": "30f5e0c5"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Include and execute your code here"
+      ],
+      "id": "a8a7ef10",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "\n",
+        "## STRETCH QUESTION|TASK 1\n",
+        "\n",
+        "__Repeat the classification model using 3 different algorithms.__ Display their Feature Importance, and Decision Matrix. Explian the differences between the models and which one you would recommend to the Client.   \n",
+        "\n",
+        "_type your results and analysis here_"
+      ],
+      "id": "da01b9d5"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Include and execute your code here\n"
+      ],
+      "id": "372b522b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## STRETCH QUESTION|TASK 2\n",
+        "\n",
+        "__Join the `dwellings_neighborhoods_ml.csv` data to the `dwelling_ml.csv` on the `parcel` column to create a new dataset. Duplicate the code for the stretch question above and update it to use this data.__ Explain the differences and if this changes the model you recomend to the Client.   \n",
+        "\n",
+        "_type your results and analysis here_"
+      ],
+      "id": "cec6cbcb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Include and execute your code here\n"
+      ],
+      "id": "a498bd80",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## STRETCH QUESTION|TASK 3\n",
+        "\n",
+        "__Can you build a model that predicts the year a house was built?__ Explain the model and the evaluation metrics you would use to determine if the model is good.  \n",
+        "\n",
+        "_type your results and analysis here_"
+      ],
+      "id": "6daead3a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Include and execute your code here\n"
+      ],
+      "id": "53fccbf6",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---"
+      ],
+      "id": "3f20c90c"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\aidan\\AppData\\Roaming\\Python\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
