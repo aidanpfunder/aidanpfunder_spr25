@@ -1,24 +1,17 @@
-
-# Read in libraries
 import pandas as pd
-import numpy as np
-from lets_plot import *
-LetsPlot.setup_html(isolated_frame=True)
-df = pd.read_json("https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json")
+from sklearn.model_selection import train_test_split
 
-# If your missing months are true NaNs:
-num_missing = df['month'].isna().sum()
+# Load the dwellings_ml dataset
+df = pd.read_csv("https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_ml/dwellings_ml.csv")
 
-# If some entries literally contain the string "n/a" (any case):
-num_na_strings = df['month'].astype(str).str.lower().eq('n/a').sum()
+# Split into features (X) and target (y)
+X = df.drop(columns=['before1980'])
+y = df['before1980']
 
-# Combine both checks:
-mask = df['month'].isna() | df['month'].astype(str).str.lower().eq('n/a')
-total_na = mask.sum()
+# Create training and testing data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.34, random_state=76)
 
-print(f"Missing (NaN) months: {num_missing}")
-print(f"Literal 'n/a' months:    {num_na_strings}")
-print(f"Total n/a or missing:    {total_na}")
+# Calculate average of the first 10 selling prices in training set
+average_sprice = X_train['sprice'].head(10).mean()
 
-na_counts = df.isna().sum()
-print(na_counts[na_counts == 23])
+print("Average of the first 10 sprice values in X_train:", average_sprice)
