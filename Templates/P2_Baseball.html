@@ -4092,7 +4092,7 @@ vertical-align: -.125em;
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/aidanpfunder/dudepfunder_spr25/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
 <p>Have you ever wondered what secrets lie hidden in the data behind baseball? I’ve written custom SQL queries in Python to show the standout players from BYU-Idaho, calculate batting averages, and compare average salaries between top teams like the Yankees and Red Sox.</p>
-<div id="7bd1a1ec" class="cell" data-execution_count="1">
+<div id="9b43dbcd" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
@@ -4103,7 +4103,7 @@ vertical-align: -.125em;
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>LetsPlot.setup_html(isolated_frame<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="4e096445" class="cell" data-execution_count="2">
+<div id="2d415631" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html</span></span>
@@ -4118,7 +4118,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="questiontask-1">QUESTION|TASK 1</h2>
 <p><strong>Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="19179083" class="cell" data-execution_count="3">
+<div id="de029f47" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>query_byu_idaho_salaries <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
@@ -4179,7 +4179,7 @@ a. Write an SQL query that provides playerID, yearID, and batting average for pl
 a. Use the same query as above, but only include players with at least 10 at bats that year. Print the top 5 results.<br>
 a. Now calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats, and print the top 5 results.</p>
 <p><em>type your results and analysis here</em></p>
-<div id="1630309a" class="cell" data-execution_count="4">
+<div id="056411ee" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>query_season_batting_ab1 <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
@@ -4204,7 +4204,7 @@ a. Now calculate the batting average for players over their entire careers (all 
 4  alanirj01    2019          1.0</code></pre>
 </div>
 </div>
-<div id="9e6e498f" class="cell" data-execution_count="5">
+<div id="c3a546d3" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>query_season_batting_ab10 <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
@@ -4229,7 +4229,7 @@ a. Now calculate the batting average for players over their entire careers (all 
 4  silvech01    1948     0.571429</code></pre>
 </div>
 </div>
-<div id="ba30c0e0" class="cell" data-execution_count="6">
+<div id="5cb685c0" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>query_career_batting_avg <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
@@ -4261,7 +4261,7 @@ a. Now calculate the batting average for players over their entire careers (all 
 <h2 class="anchored" data-anchor-id="questiontask-3">QUESTION|TASK 3</h2>
 <p><strong>Pick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?</strong></p>
 <p>I compared the average salaries between the Boston Red Sox and the New York Yankees. I learned that the New York Yankees have started paying their players significantly mkore on average since 2002. Both teams have increased their average salaries over time.</p>
-<div id="bc26f48c" class="cell" data-execution_count="7">
+<div id="e1480958" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lets_plot <span class="im">import</span> <span class="op">*</span></span>
@@ -4316,7 +4316,7 @@ a. Now calculate the batting average for players over their entire careers (all 
 //# sourceMappingURL=lets-plot.js.map</script>
    
    
-          <div id="y9Jg9x"></div>
+          <div id="iUXocv"></div>
    <script type="text/javascript" data-lets-plot-script="plot">
    
    (function() {
@@ -4341,7 +4341,7 @@ a. Now calculate the batting average for players over their entire careers (all 
        };
    }
    
-   const containerDiv = document.getElementById("y9Jg9x");
+   const containerDiv = document.getElementById("iUXocv");
    let fig = null;
    
    function renderPlot() {
@@ -4467,7 +4467,7 @@ a. Now calculate the batting average for players over their entire careers (all 
 
 **Hint:** Beware, it is common for a player to play multiple positions in a single year. For this analysis, each player’s salary should only be counted toward one position in a given year: the position at which they played the most games that year. This will likely require a (sub-query)[https://docs.data.world/documentation/sql/concepts/advanced/WITH.html].</code></pre>
 <p>This shows that first base players have the highest average salary for baseball players. It is interested that although the highest paid player is a pitcher, pitchers rank 4th according to average salaries. This may be because pitcher has the highest number of players, meaning that they cannot all be top earners.</p>
-<div id="751e8a29" class="cell" data-execution_count="8">
+<div id="88c9474a" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>query_salary_by_position_named <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
@@ -4542,7 +4542,7 @@ a. Now calculate the batting average for players over their entire careers (all 
 
 * The career_length should be calculated as the difference between the maximum and minimum yearID for each player.  </code></pre>
 <p>The top ten longest carreers for baseball players is dominated by older players. Of the ten, six of them began their careers in the 1800s with two more beginning before 1904. The player with the logest career is Jim O’Rourke with 32 years, who began his career in 1872. This could be a sign that modern players do not last as long in their career due to more intense play or stricter work out regiments.</p>
-<div id="9d039e8b" class="cell" data-execution_count="9">
+<div id="13a42837" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>query_career_longevity_with_start <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
