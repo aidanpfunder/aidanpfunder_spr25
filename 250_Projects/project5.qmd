@@ -1,7 +1,7 @@
 ---
 title: "Client Report - The War with Star Wars"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Aidan Pfunder"
 format:
   html:
     self-contained: true
@@ -31,17 +31,13 @@ import numpy as np
 from lets_plot import *
 # add the additional libraries you need to import for ML here
 
-LetsPlot.setup_html(isolated_frame=True)
+LetsPlot.setup_html()
 ```
 
 
 ```{python}
-# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html
-
-# Include and execute your code here
-
-# import your data here using pandas and the URL
-
+url = "https://raw.githubusercontent.com/fivethirtyeight/data/master/star-wars-survey/StarWars.csv"
+df = pd.read_csv(url, encoding="ISO-8859-1")
 
 ```
 
@@ -57,7 +53,60 @@ __Shorten the column names and clean them up for easier use with pandas.__ Provi
 _type your results and analysis here_
 
 ```{python}
-# Include and execute your code here
+
+# Save original column names
+original_columns = df.columns.tolist()
+
+# Define custom cleaned + shortened names
+short_columns = [
+    'respondent_id',
+    'seen_any',
+    'fan_star_wars',
+    'seen_film_1',
+    'seen_film_2',
+    'seen_film_3',
+    'seen_film_4',
+    'seen_film_5',
+    'seen_film_6',
+    'rank_film_1',
+    'rank_film_2',
+    'rank_film_3',
+    'rank_film_4',
+    'rank_film_5',
+    'rank_film_6',
+    'char_han',
+    'char_luke',
+    'char_leia',
+    'char_anakin',
+    'char_obiwan',
+    'char_palpatine',
+    'char_vader',
+    'char_lando',
+    'char_boba',
+    'char_c3po',
+    'char_r2d2',
+    'char_jarjar',
+    'char_padme',
+    'char_yoda',
+    'shot_first',
+    'know_expanded',
+    'fan_expanded',
+    'fan_star_trek',
+    'gender',
+    'age',
+    'household_income',
+    'education',
+    'location'
+]
+
+# Apply new column names
+df.columns = short_columns
+
+# Display mapping of cleaned names
+pd.DataFrame({
+    'Original Name': original_columns,
+    'Cleaned Name': short_columns
+})
 
 
 ```
@@ -76,38 +125,73 @@ __Clean and format the data so that it can be used in a machine learning model._
 _type your results and analysis here_
 
 ```{python}
-# Include and execute your code here
+# Filter to only respondents who answered "Yes" to seeing any Star Wars film
+df = df[df['seen_any'].str.lower() == 'yes']
+df.reset_index(drop=True, inplace=True)
 
 
 ```
 
 ```{python}
-# Include and execute your code here
+age_map = {
+    '18-29': 23.5,
+    '30-44': 37,
+    '45-60': 52.5,
+    '60+': 65
+}
 
+df['age_num'] = df['age'].map(age_map)
+df.drop(columns='age', inplace=True)
 
-```
-
-```{python}
-# Include and execute your code here
-
-
-```
-
-```{python}
-# Include and execute your code here
 
 
 ```
 
 ```{python}
-# Include and execute your code here
+edu_map = {
+    'Less than high school degree': 1,
+    'High school degree': 2,
+    'Some college or Associate degree': 3,
+    'Bachelor degree': 4,
+    'Graduate degree': 5
+}
+
+df['education_num'] = df['education'].map(edu_map)
+df.drop(columns='education', inplace=True)
 
 
 ```
 
 ```{python}
-# Include and execute your code here
+income_map = {
+    'Under $25,000': 12500,
+    '$25,000 - $49,999': 37500,
+    '$50,000 - $99,999': 75000,
+    '$100,000 - $149,999': 125000,
+    '$150,000+': 175000
+}
 
+df['income_num'] = df['household_income'].map(income_map)
+df.drop(columns='household_income', inplace=True)
+
+
+```
+
+```{python}
+df['target_income_50k'] = df['income_num'].apply(lambda x: 1 if x > 50000 else 0)
+
+
+```
+
+```{python}
+# Get all object (categorical) columns that remain
+categorical_cols = df.select_dtypes(include='object').columns
+
+# One-hot encode and drop first category to prevent multicollinearity
+df_encoded = pd.get_dummies(df, columns=categorical_cols, drop_first=True)
+
+# Preview final dataset
+df_encoded.head()
 
 ```
 
@@ -118,13 +202,51 @@ __Validate that the data provided on GitHub lines up with the article by recreat
 _type your results and analysis here_
 
 ```{python}
-# Include and execute your code here
+from lets_plot import *
+LetsPlot.setup_html()
+
+seen_cols = ['seen_film_1', 'seen_film_2', 'seen_film_3', 'seen_film_4', 'seen_film_5', 'seen_film_6']
+film_labels = ['The Phantom Menace', 'Attack of the Clones', 'Revenge of the Sith',
+               'A New Hope', 'The Empire Strikes Back', 'Return of the Jedi']
+
+seen_counts = df[seen_cols].apply(lambda col: col == 'Yes').sum().values
+seen_df = pd.DataFrame({'film': film_labels, 'count': seen_counts})
+
+#Use print() to render the plot in Quarto
+print(
+    ggplot(seen_df, aes(x='film', y='count')) +
+    geom_col(fill='#1696d2') +
+    coord_flip() +
+    ggtitle('Which Star Wars Movies Have You Seen?') +
+    ylab('Number of Respondents') +
+    xlab('') +
+    theme(axis_text_y=element_text(size=10))
+)
 
 ```
 
 ```{python}
-# Include and execute your code here
+from lets_plot import *
+LetsPlot.setup_html()
 
+rank_cols = ['rank_film_1', 'rank_film_2', 'rank_film_3', 'rank_film_4', 'rank_film_5', 'rank_film_6']
+film_labels = ['The Phantom Menace', 'Attack of the Clones', 'Revenge of the Sith',
+               'A New Hope', 'The Empire Strikes Back', 'Return of the Jedi']
+
+rank_df = df[rank_cols].dropna()
+rank_1_counts = (rank_df == 1).sum().values
+rank_df_plot = pd.DataFrame({'film': film_labels, 'count': rank_1_counts})
+
+# ✅ Use print() to render the plot in Quarto
+print(
+    ggplot(rank_df_plot, aes(x='film', y='count')) +
+    geom_col(fill='#1696d2') +
+    coord_flip() +
+    ggtitle("What's the Best Star Wars Movie?") +
+    ylab('Number of #1 Votes') +
+    xlab('') +
+    theme(axis_text_y=element_text(size=10))
+)
 ```
 
 ## QUESTION|TASK 4

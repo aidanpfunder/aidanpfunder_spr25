@@ -1,17 +1,50 @@
+
+# %%
+# Read in libraries
 import pandas as pd
-from sklearn.model_selection import train_test_split
+import numpy as np
+from lets_plot import *
+LetsPlot.setup_html(isolated_frame=True)
 
-# Load the dwellings_ml dataset
-df = pd.read_csv("https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_ml/dwellings_ml.csv")
+# %%
+# Load the CSV from the URL
+url = 'https://github.com/fivethirtyeight/data/raw/master/star-wars-survey/StarWars.csv'
+df = pd.read_csv(url, encoding='ISO-8859-1')
 
-# Split into features (X) and target (y)
-X = df.drop(columns=['before1980'])
-y = df['before1980']
+# %%
+# Strip column names for cleaner reference
+df.columns = df.columns.str.strip()
 
-# Create training and testing data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.34, random_state=76)
+# %%
+# Column that indicates if they've seen any Star Wars films
+col = "Have you seen any of the 6 films in the Star Wars franchise?"
 
-# Calculate average of the first 10 selling prices in training set
-average_sprice = X_train['sprice'].head(10).mean()
+# Calculate percentage
+seen_yes = df[col].str.strip().eq("Yes").sum()
+total_responses = df[col].notna().sum()
+percentage = (seen_yes / total_responses) * 100
 
-print("Average of the first 10 sprice values in X_train:", average_sprice)
+# Output result
+print(f"Percentage of people who have seen at least one film: {percentage}%")
+
+# %%
+# Strip column names just in case
+df.columns = df.columns.str.strip()
+
+# Column names
+seen_col = "Have you seen any of the 6 films in the Star Wars franchise?"
+gender_col = "Gender"
+
+# Filter only rows where gender is Male and gender is not null
+males = df[df[gender_col].str.strip() == "Male"]
+
+# Among males, how many have seen at least one film?
+males_seen_yes = males[seen_col].str.strip().eq("Yes").sum()
+
+# Total number of valid male responses (excluding nulls in 'seen_col')
+total_males = males[seen_col].notna().sum()
+
+# Calculate percentage
+male_seen_pct = (males_seen_yes / total_males) * 100
+
+print(f"Percentage of males who have seen at least one film: {male_seen_pct}%")
