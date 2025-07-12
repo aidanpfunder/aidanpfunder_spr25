@@ -42,15 +42,13 @@ df = pd.read_csv(url, encoding="ISO-8859-1")
 ```
 
 ## Elevator pitch
-_A SHORT (2-3 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._ (Note: this is not a summary of the project, but a summary of the results.)
-
-_A Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client._
+I explored survey data on Star Wars fans to uncover patterns in both audience preferences and income prediction. I identified which films were most widely watched and which films were highest rated and found taht The Empire Strikes Back was both the most commoonly watched and the highest rated. I then build a machine learning model to predict the income level of respondents based on their demographics and movie preferences. 
 
 ## QUESTION|TASK 1
 
 __Shorten the column names and clean them up for easier use with pandas.__ Provide a table or list that exemplifies how you fixed the names. 
 
-_type your results and analysis here_
+I assigned new column names to each column to make it easier to reference throughout this analysis. 
 
 ```{python}
 
@@ -122,7 +120,7 @@ __Clean and format the data so that it can be used in a machine learning model._
     a. Create your target (also known as “y” or “label”) column based on the new income range column  
     a. One-hot encode all remaining categorical columns   
 
-_type your results and analysis here_
+I cleaned up the data further here and made it simpler to analize by converting groupings to single values and filtering out respondents that had not seen any movies. 
 
 ```{python}
 # Filter to only respondents who answered "Yes" to seeing any Star Wars film
@@ -199,29 +197,33 @@ df_encoded.head()
 
 __Validate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.__  
 
-_type your results and analysis here_
+I recreated two charts from the article that counts the most seen Star Wars movie and shows the highest rated Star Wars movie. I calculated the best Star Wars movie by counting the number of times a movie was given the rank 1. 
 
 ```{python}
 from lets_plot import *
 LetsPlot.setup_html()
 
+# Define cleaned columns and human-readable labels
 seen_cols = ['seen_film_1', 'seen_film_2', 'seen_film_3', 'seen_film_4', 'seen_film_5', 'seen_film_6']
 film_labels = ['The Phantom Menace', 'Attack of the Clones', 'Revenge of the Sith',
                'A New Hope', 'The Empire Strikes Back', 'Return of the Jedi']
 
-seen_counts = df[seen_cols].apply(lambda col: col == 'Yes').sum().values
+# Count non-null entries (film seen)
+seen_counts = df[seen_cols].notnull().sum().values
+
+# Build DataFrame for plotting
 seen_df = pd.DataFrame({'film': film_labels, 'count': seen_counts})
 
-#Use print() to render the plot in Quarto
-print(
-    ggplot(seen_df, aes(x='film', y='count')) +
-    geom_col(fill='#1696d2') +
-    coord_flip() +
-    ggtitle('Which Star Wars Movies Have You Seen?') +
-    ylab('Number of Respondents') +
-    xlab('') +
+# Plot the chart
+ggplot(seen_df, aes(x='film', y='count')) + \
+    geom_bar(stat='identity', fill='#1696d2') + \
+    coord_flip() + \
+    ggtitle('Which Star Wars Movies Have You Seen?') + \
+    ylab('Number of Respondents') + \
+    xlab('') + \
     theme(axis_text_y=element_text(size=10))
-)
+
+
 
 ```
 
@@ -233,30 +235,47 @@ rank_cols = ['rank_film_1', 'rank_film_2', 'rank_film_3', 'rank_film_4', 'rank_f
 film_labels = ['The Phantom Menace', 'Attack of the Clones', 'Revenge of the Sith',
                'A New Hope', 'The Empire Strikes Back', 'Return of the Jedi']
 
-rank_df = df[rank_cols].dropna()
+rank_df = df[rank_cols].apply(pd.to_numeric, errors='coerce').dropna()
 rank_1_counts = (rank_df == 1).sum().values
 rank_df_plot = pd.DataFrame({'film': film_labels, 'count': rank_1_counts})
 
-# ✅ Use print() to render the plot in Quarto
-print(
-    ggplot(rank_df_plot, aes(x='film', y='count')) +
-    geom_col(fill='#1696d2') +
-    coord_flip() +
-    ggtitle("What's the Best Star Wars Movie?") +
-    ylab('Number of #1 Votes') +
-    xlab('') +
-    theme(axis_text_y=element_text(size=10))
-)
+ggplot(rank_df_plot, aes(x='film', y='count')) + \
+geom_bar(stat='identity', fill='#1696d2') + \
+coord_flip() + \
+ggtitle("What's the Best Star Wars Movie?") + \
+ylab('Number of #1 Votes') + \
+xlab('') + \
+theme(axis_text_y=element_text(size=10))
+
 ```
 
 ## QUESTION|TASK 4
 
 __Build a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.__ 
 
-_type your results and analysis here_
+I built a Random Forest Classifier to predict whether a respondent earns more than 50,000 annually based on their other responses. I excluded the income_num clumn and filles all NaN values in the data with 0 before training the model. I then split the data into training 80% and testing 20% sets using train_test_split and trained the model using 100 trees. The model achieved an accuracy of 56.38%.
 
 ```{python}
-# Include and execute your code here
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
+
+# Drop target and income_num (to prevent leakage)
+X = df_encoded.drop(columns=['target_income_50k', 'income_num'])
+y = df_encoded['target_income_50k']
+
+# Train-test split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Train model
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+
+# Predict and evaluate
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Model Accuracy: {accuracy:.2%}")
+print(classification_report(y_test, y_pred))
 
 ```
 
